@@ -843,7 +843,8 @@ section {
 # Counts
 --------------------------------------------------------------*/
 .counts {
-  background: #0069B3;
+  background: white;
+  /* background: #0069B3; */
   padding: 30px 0 30px;
 }
 .counts .count-box {
@@ -884,7 +885,8 @@ section {
   /* font-family: "Montserrat", sans-serif; */
   font-size: 20px;
   margin-top: 15px;
-  color: white;
+  /* color: white; */
+  color: #0069B3;
 }
 
 .counts4 {
