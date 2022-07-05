@@ -33,6 +33,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
     <style>
@@ -241,6 +242,9 @@
                         </div>
                     </div>
                 </div>
+                <div>
+                    <div id="map"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -277,6 +281,23 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script>
+        let map;
+    
+    function initMap() {
+      map = new google.maps.Map(document.getElementById("map"), {
+        center: { lat: -34.397, lng: 150.644 },
+        zoom: 8,
+      });
+    }
+    
+    window.initMap = initMap;
+      </script>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAISNNSglHmzfxXmgyBomFFt6FZ32AdG6A&callback=initMap&v=weekly"
+    defer
+  ></script>
+
 
 </body>
 
