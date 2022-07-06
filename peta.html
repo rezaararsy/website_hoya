@@ -60,6 +60,60 @@
             border-radius: 14px;
             /* The width is the width of the web page */
         }
+
+        .konten {
+            -ms-overflow-style: none;
+            /* Internet Explorer 10+ */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+
+        .konten::-webkit-scrollbar {
+            display: none;
+            /* Safari and Chrome */
+        }
+
+        .search {
+            position: relative;
+            box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+
+        }
+
+        .search input {
+
+            height: 60px;
+            text-indent: 25px;
+            border: 2px solid #d6d4d4;
+
+
+        }
+
+
+        .search input:focus {
+
+            box-shadow: none;
+            border: 2px solid #0069B3;
+
+
+        }
+
+        .search .fa-search {
+
+            position: absolute;
+            top: 20px;
+            left: 16px;
+
+        }
+
+        .search button {
+
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            height: 50px;
+            width: 110px;
+            background: #0069B3;
+        }
     </style>
 
     <!-- =======================================================
@@ -173,39 +227,53 @@
                         </p>
                     </div>
                 </div> -->
-                <div class="embed-responsive" style="padding: 20px;width: 300px;background-color: white; border-radius: 14px; z-index: 1;
-                    position: absolute; left: 20px;margin-top: 20px;
+                <div class="embed-responsive" style="padding: 20px;width: 400px;background-color: white; border-radius: 14px; z-index: 1;
+                    position: absolute; left: 20px;margin-top: 20px; height: 700px;
                   ">
-                    <div class="form-group has-search">
-                        <span class="fa fa-search form-control-feedback"></span>
-                        <input type="text" class="form-control" placeholder="Search">
+                    <div class="search">
+                        <i class="fa fa-search"></i>
+                        <input id="carinya" type="text" class="form-control" placeholder="Pencarian">
+                        <button class="btn btn-primary" onclick="pencarian()">Search</button>
                     </div>
                     <div style="margin-top: 20px;margin-bottom: 20px;">
                         <div class="form-check form-check-inline" style="margin: 5px;">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                                value="option1">
+                            <input onclick="filternya('All')" class="form-check-input" type="radio"
+                                name="inlineRadioOptions" id="inlineRadio1" value="option1">
                             <label class="form-check-label" for="inlineRadio1">All</label>
                         </div>
                         <div class="form-check form-check-inline" style="margin: 5px;">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                                value="option2">
+                            <input onclick="filternya('MIYOSMART')" class="form-check-input" type="radio"
+                                name="inlineRadioOptions" id="inlineRadio2" value="option2">
                             <label class="form-check-label" for="inlineRadio2">MIYOSMART</label>
                         </div>
                         <div class="form-check form-check-inline" style="margin: 5px;">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                                value="option2">
+                            <input onclick="filternya('Sensity')" class="form-check-input" type="radio"
+                                name="inlineRadioOptions" id="inlineRadio2" value="option2">
                             <label class="form-check-label" for="inlineRadio2">Sensity</label>
                         </div>
                         <div class="form-check" style="margin: 5px;">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                                value="option2">
+                            <input onclick="filternya('Hoya Center Dealer')" class="form-check-input" type="radio"
+                                name="inlineRadioOptions" id="inlineRadio2" value="option2">
                             <label class="form-check-label" for="inlineRadio2">Hoya Center Dealer</label>
                         </div>
                     </div>
                     <hr>
                     <p>200 Result</p>
                     <hr>
-                    <div class=""
+                    <div style="height: 450px;">
+                        <div style="height: 100%;
+                        overflow: auto;
+                        box-sizing: border-box;
+                        width: 100%;
+                        top: 0;" class="konten">
+                            <div id="isinya" style="overflow-y: auto;">
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- <div class=""
                         style="padding: 20px; border-style: dashed;border-color: #0069B3;border-radius: 10px;">
                         <p><b>OPTIK MELAWAI</b></p>
                         <p>
@@ -217,7 +285,7 @@
                         <p>
                             Lotte Mart Kelapa Gading Unit A Jl. Ijen No.18
                         </p>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-lg-12">
                     <div class="row" style="padding: 10px;">
@@ -290,7 +358,64 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>
+        var objeknya = [];
+        $().ready(function () {
+            getData();
+
+            //filternya("All");
+        });
+        function getData() {
+            $.getJSON("peta.json", function (data) {
+                console.log(data);
+                objeknya = data;
+                for (let i = 0; i < data.length; i++) {
+                    $('#isinya').append('<div class=""style="padding: 20px; border-style: dashed;border-color: #0069B3;border-radius: 10px;margin:10px"><p><b>' + data[i].judul + ' [' + data[i].type + ']</b></p><p>' + data[i].alamat + '</p></div>');
+                }
+            });
+        }
+
+        function filternya(jenis) {
+            $('#isinya').empty();
+            if (jenis == "All") {
+                getData();
+            } else {
+                $.getJSON("peta.json", function (data) {
+                    var objek = []
+
+                    objek = data.filter(function (el) {
+                        return el.type == jenis; // Changed this so a home would match
+                    });
+                    for (let i = 0; i < objek.length; i++) {
+                        $('#isinya').append('<div class=""style="padding: 20px; border-style: dashed;border-color: #0069B3;border-radius: 10px;margin:10px"><p><b>' + objek[i].judul + ' [' + objek[i].type + ']</b></p><p>' + objek[i].alamat + '</p></div>');
+                    }
+                });
+            }
+
+
+        }
+        function pencarian() {
+            $('#isinya').empty();
+            if ($("#carinya").val() == "") {
+                $('#isinya').append('<div class=""style="padding: 20px; border-style: dashed;border-color: #0069B3;border-radius: 10px;margin:10px"><p>Data Tidak Ditemukan</p></div>');
+            } else {
+                $.getJSON("peta.json", function (data) {
+                    var objek = []
+                    var inputs = $("#carinya").val();;
+                    console.log("Cari " + inputs);
+                    objek = data.filter(function (el) {
+                        return el.type == inputs || el.alamat == inputs || el.judul == inputs; // Changed this so a home would match
+                    });
+                    for (let i = 0; i < objek.length; i++) {
+                        $('#isinya').append('<div class=""style="padding: 20px; border-style: dashed;border-color: #0069B3;border-radius: 10px;margin:10px"><p><b>' + objek[i].judul + ' [' + objek[i].type + ']</b></p><p>' + objek[i].alamat + '</p></div>');
+                    }
+                });
+            }
+
+
+
+        }
         // let map;
 
         // function initMap() {
