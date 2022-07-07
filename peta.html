@@ -373,7 +373,7 @@
                 console.log(data);
                 objeknya = data;
                 for (let i = 0; i < data.length; i++) {
-                    $('#isinya').append('<div class=""style="padding: 20px; border-style: dashed;border-color: #0069B3;border-radius: 10px;margin:10px"><p><b>' + data[i].judul + ' [' + data[i].type + ']</b></p><p>' + data[i].alamat + '</p></div>');
+                    $('#isinya').append('<div onclick="myClick('+i+')" class=""style="padding: 20px; border-style: dashed;border-color: #0069B3;border-radius: 10px;margin:10px"><p><b>' + data[i].judul + ' [' + data[i].type + ']</b></p><p>' + data[i].alamat + '</p></div>');
                 }
             });
         }
@@ -392,11 +392,13 @@
                     objek2 = data.filter(function (el) {
                         return el.type == jenis; // Changed this so a home would match
                     });
-                    for (let i = 0; i < objek2.length; i++) {
-                        $('#isinya').append('<div class=""style="padding: 20px; border-style: dashed;border-color: #0069B3;border-radius: 10px;margin:10px"><p><b>' + objek2[i].judul + ' [' + objek2[i].type + ']</b></p><p>' + objek2[i].alamat + '</p></div>');
-                    }
                     objek = objek2;
                     loadMap();
+                    for (let i = 0; i < objek2.length; i++) {
+                        $('#isinya').append('<div onclick="myClick('+i+')" class=""style="padding: 20px; border-style: dashed;border-color: #0069B3;border-radius: 10px;margin:10px"><p><b>' + objek2[i].judul + ' [' + objek2[i].type + ']</b></p><p>' + objek2[i].alamat + '</p></div>');
+                    }
+                    
+                    // myClick(0);
                 });
             }
 
@@ -406,7 +408,7 @@
             removeMarkers();
             $('#isinya').empty();
             if ($("#carinya").val() == "") {
-                $('#isinya').append('<div class=""style="padding: 20px; border-style: dashed;border-color: #0069B3;border-radius: 10px;margin:10px"><p>Data Tidak Ditemukan</p></div>');
+                $('#isinya').append('<div onclick="myClick('+i+')" class=""style="padding: 20px; border-style: dashed;border-color: #0069B3;border-radius: 10px;margin:10px"><p>Data Tidak Ditemukan</p></div>');
             } else {
                 $.getJSON("peta.json", function (data) {
                     var objek2 = []
@@ -415,11 +417,12 @@
                     objek2 = data.filter(function (el) {
                         return el.type == inputs || el.alamat == inputs || el.judul == inputs; // Changed this so a home would match
                     });
-                    for (let i = 0; i < objek2.length; i++) {
-                        $('#isinya').append('<div class=""style="padding: 20px; border-style: dashed;border-color: #0069B3;border-radius: 10px;margin:10px"><p><b>' + objek2[i].judul + ' [' + objek2[i].type + ']</b></p><p>' + objek2[i].alamat + '</p></div>');
-                    }
                     objek = objek2;
                     loadMap();
+                    for (let i = 0; i < objek2.length; i++) {
+                        $('#isinya').append('<div onclick="myClick('+i+')" class=""style="padding: 20px; border-style: dashed;border-color: #0069B3;border-radius: 10px;margin:10px"><p><b>' + objek2[i].judul + ' [' + objek2[i].type + ']</b></p><p>' + objek2[i].alamat + '</p></div>');
+                    }
+                    
                 });
             }
 
@@ -516,6 +519,11 @@
                 markers[i].setMap(null);
             }
             markers = [];
+        }
+
+        function myClick(id) {
+            console.log(id);
+            google.maps.event.trigger(markers[id], 'click');
         }
 
         // Loop through the results array and place a marker for each
