@@ -8,14 +8,16 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-/* @font-face {
+@font-face {
   font-family: Galano;
-  src: url(/assets/font/GalanoGrotesqueRegular.otf) format("opentype");
-} */
+  /* src: url(https://miyosmart.hoyaexperience.com/testing/assets/font/GalanoGrotesque-Regular.otf) format("opentype"); */
+  
+  src: url(/assets/font/GalanoGrotesque-Regular.otf) format("opentype");
+}
 
 body {
-  /* font-family: 'Galano Grotesque'; */
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Galano';
+  /* font-family: 'Roboto', sans-serif; */
   color: #444444;
 }
 
@@ -30,7 +32,8 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Darker Grotesque', sans-serif;
+  font-family: 'Galano';
+  /* font-family: 'Darker Grotesque', sans-serif; */
 }
 
 /*--------------------------------------------------------------
