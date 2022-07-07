@@ -361,6 +361,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>
         var objeknya = [];
+        var objek=[];
+        var markers=[];
         $().ready(function () {
             getData();
 
@@ -377,39 +379,47 @@
         }
 
         function filternya(jenis) {
+            removeMarkers();
             $('#isinya').empty();
             if (jenis == "All") {
                 getData();
+                initMap();
+                loadMap();
             } else {
                 $.getJSON("peta.json", function (data) {
-                    var objek = []
+                    var objek2 = []
 
-                    objek = data.filter(function (el) {
+                    objek2 = data.filter(function (el) {
                         return el.type == jenis; // Changed this so a home would match
                     });
-                    for (let i = 0; i < objek.length; i++) {
-                        $('#isinya').append('<div class=""style="padding: 20px; border-style: dashed;border-color: #0069B3;border-radius: 10px;margin:10px"><p><b>' + objek[i].judul + ' [' + objek[i].type + ']</b></p><p>' + objek[i].alamat + '</p></div>');
+                    for (let i = 0; i < objek2.length; i++) {
+                        $('#isinya').append('<div class=""style="padding: 20px; border-style: dashed;border-color: #0069B3;border-radius: 10px;margin:10px"><p><b>' + objek2[i].judul + ' [' + objek2[i].type + ']</b></p><p>' + objek2[i].alamat + '</p></div>');
                     }
+                    objek = objek2;
+                    loadMap();
                 });
             }
 
 
         }
         function pencarian() {
+            removeMarkers();
             $('#isinya').empty();
             if ($("#carinya").val() == "") {
                 $('#isinya').append('<div class=""style="padding: 20px; border-style: dashed;border-color: #0069B3;border-radius: 10px;margin:10px"><p>Data Tidak Ditemukan</p></div>');
             } else {
                 $.getJSON("peta.json", function (data) {
-                    var objek = []
+                    var objek2 = []
                     var inputs = $("#carinya").val();;
                     console.log("Cari " + inputs);
-                    objek = data.filter(function (el) {
+                    objek2 = data.filter(function (el) {
                         return el.type == inputs || el.alamat == inputs || el.judul == inputs; // Changed this so a home would match
                     });
-                    for (let i = 0; i < objek.length; i++) {
-                        $('#isinya').append('<div class=""style="padding: 20px; border-style: dashed;border-color: #0069B3;border-radius: 10px;margin:10px"><p><b>' + objek[i].judul + ' [' + objek[i].type + ']</b></p><p>' + objek[i].alamat + '</p></div>');
+                    for (let i = 0; i < objek2.length; i++) {
+                        $('#isinya').append('<div class=""style="padding: 20px; border-style: dashed;border-color: #0069B3;border-radius: 10px;margin:10px"><p><b>' + objek2[i].judul + ' [' + objek2[i].type + ']</b></p><p>' + objek2[i].alamat + '</p></div>');
                     }
+                    objek = objek2;
+                    loadMap();
                 });
             }
 
@@ -464,8 +474,23 @@
                 .then(response => response.json())
                 .then(json => {
                     console.log(json);
-                    for (let i = 0; i < json.length; i++) {
-                        const coords = json[i];
+                    // loadMap(json);
+                    objek = json;
+                    loadMap();
+                });
+        }
+
+        function loadMap(){
+            var infoWindow = new google.maps.InfoWindow();
+            const icon = {
+                url: "assets/about5.png", // url
+                scaledSize: new google.maps.Size(50, 50), // scaled size
+                origin: new google.maps.Point(0, 0), // origin
+                anchor: new google.maps.Point(0, 0) // anchor
+            };
+            var latlngbounds = new google.maps.LatLngBounds();
+            for (let i = 0; i < objek.length; i++) {
+                        const coords = objek[i];
                         const latLng = new google.maps.LatLng(coords.longitude, coords.latitude);
 
                         var marker = new google.maps.Marker({
@@ -480,9 +505,17 @@
                                 infoWindow.open(map, marker);
                             });
                         })(marker, coords);
+                        markers.push(marker);
                         latlngbounds.extend(marker.position);
                     }
-                });
+        }
+
+        function removeMarkers(){
+        //loop through all markers and remove it.
+            for(var i=0; i < markers.length; i++){
+                markers[i].setMap(null);
+            }
+            markers = [];
         }
 
         // Loop through the results array and place a marker for each
