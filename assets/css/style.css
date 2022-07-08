@@ -12,7 +12,8 @@
   font-family: Galano;
   /* src: url(https://miyosmart.hoyaexperience.com/testing/assets/font/GalanoGrotesque-Regular.otf) format("opentype"); */
   
-  src: url(/assets/font/GalanoGrotesque-Regular.otf) format("opentype");
+  /* src: url(/assets/font/GalanoGrotesque-Regular.otf) format("opentype"); */
+  src: url(../font/GalanoGrotesque-Regular.otf) format("opentype");
 }
 
 body {
