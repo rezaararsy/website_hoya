@@ -179,7 +179,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: space-between;
   /* padding: 10px 0 10px 30px; */
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
   color: white;
@@ -361,6 +361,7 @@ h1, h2, h3, h4, h5, h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
+  /* height: 100vh; */
   width: 100%;
   background: url("../img/hero-bg.jpg");
   position: relative;
@@ -998,7 +999,7 @@ section {
 
 .counts4 {
   background: #0069B3;
-  padding: 30px 0 30px;
+  padding: 0 0 30px;
 }
 .counts4 .count-box {
   padding: 30px 30px 25px 30px;
@@ -1046,14 +1047,15 @@ section {
   padding: 70px 0 60px;
 }
 .counts2 .count-box {
-  padding: 30px 30px 25px 30px;
+  /* padding: 0px 30px 35px 0px; */
+
   width: 100%;
   /* height: 250px; */
   position: relative;
   text-align: center;
   background: #0069B3;
   /* margin-bottom: 100px; */
-  border-radius: 8px;
+  /* border-radius: 8px; */
 }
 .counts2 .count-box i {
   position: absolute;
