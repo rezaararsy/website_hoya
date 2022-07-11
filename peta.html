@@ -227,8 +227,11 @@
                         </p>
                     </div>
                 </div> -->
-                <div class="embed-responsive" style="padding: 20px;width: 400px;background-color: white; border-radius: 0px; z-index: 1;
+                <!-- <div class="embed-responsive" style="padding: 20px;width: 400px;background-color: white; border-radius: 0px; z-index: 1;
                     position: absolute; height: 700px;
+                  "> -->
+                  <div class="col-lg-3" style="padding: 20px;background-color: white; border-radius: 0px; z-index: 1;
+                   height: 700px;
                   ">
                     <div class="search">
                         <i class="fa fa-search"></i>
@@ -287,7 +290,7 @@
                         </p>
                     </div> -->
                 </div>
-                <div class="col-lg-12">
+                <div class="col-lg-9">
                     <div class="row" style="padding: 10px;">
                         <div id="map" style="height:690px"></div>
                         <!-- <div class="mapouter">
@@ -373,7 +376,7 @@
                 console.log(data);
                 objeknya = data;
                 for (let i = 0; i < data.length; i++) {
-                    $('#isinya').append('<div onclick="myClick(' + i + ')" class=""style="padding: 20px; border-style: dashed;border-color: #0069B3;border-radius: 10px;margin:10px"><p><b>' + data[i].judul + ' [' + data[i].type + ']</b></p><p>' + data[i].alamat + '</p></div>');
+                    $('#isinya').append('<div onclick="myClick(' + i + ','+data[i].LatLng+')" class=""style="padding: 20px; border-style: dashed;border-color: #0069B3;border-radius: 10px;margin:10px"><p><b>' + data[i].judul + ' [' + data[i].type + ']</b></p><p>' + data[i].alamat + '</p></div>');
                 }
             });
         }
@@ -395,7 +398,7 @@
                     objek = objek2;
                     loadMap();
                     for (let i = 0; i < objek2.length; i++) {
-                        $('#isinya').append('<div onclick="myClick(' + i + ')" class=""style="padding: 20px; border-style: dashed;border-color: #0069B3;border-radius: 10px;margin:10px"><p><b>' + objek2[i].judul + ' [' + objek2[i].type + ']</b></p><p>' + objek2[i].alamat + '</p></div>');
+                        $('#isinya').append('<div onclick="myClick(' + i + ','+objek2[i].LatLng+')" class=""style="padding: 20px; border-style: dashed;border-color: #0069B3;border-radius: 10px;margin:10px"><p><b>' + objek2[i].judul + ' [' + objek2[i].type + ']</b></p><p>' + objek2[i].alamat + '</p></div>');
                     }
 
                     // myClick(0);
@@ -408,7 +411,7 @@
             removeMarkers();
             $('#isinya').empty();
             if ($("#carinya").val() == "") {
-                $('#isinya').append('<div onclick="myClick(' + i + ')" class=""style="padding: 20px; border-style: dashed;border-color: #0069B3;border-radius: 10px;margin:10px"><p>Data Tidak Ditemukan</p></div>');
+                $('#isinya').append('<div onclick="myClick(' + i + ',0)" class=""style="padding: 20px; border-style: dashed;border-color: #0069B3;border-radius: 10px;margin:10px"><p>Data Tidak Ditemukan</p></div>');
             } else {
                 $.getJSON("peta.json", function (data) {
                     var objek2 = []
@@ -420,7 +423,7 @@
                     objek = objek2;
                     loadMap();
                     for (let i = 0; i < objek2.length; i++) {
-                        $('#isinya').append('<div onclick="myClick(' + i + ')" class=""style="padding: 20px; border-style: dashed;border-color: #0069B3;border-radius: 10px;margin:10px"><p><b>' + objek2[i].judul + ' [' + objek2[i].type + ']</b></p><p>' + objek2[i].alamat + '</p></div>');
+                        $('#isinya').append('<div onclick="myClick(' + i + ','+objek2[i].LatLng+')" class=""style="padding: 20px; border-style: dashed;border-color: #0069B3;border-radius: 10px;margin:10px"><p><b>' + objek2[i].judul + ' [' + objek2[i].type + ']</b></p><p>' + objek2[i].alamat + '</p></div>');
                     }
 
                 });
@@ -521,9 +524,10 @@
             markers = [];
         }
 
-        function myClick(id) {
+        function myClick(id,LatLng) {
             console.log(id);
             google.maps.event.trigger(markers[id], 'click');
+            google.maps.event.panTo(markers[id]);
         }
 
         // Loop through the results array and place a marker for each
