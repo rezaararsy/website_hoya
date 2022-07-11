@@ -527,7 +527,9 @@
         function myClick(id,LatLng) {
             console.log(id);
             google.maps.event.trigger(markers[id], 'click');
-            google.maps.event.panTo(markers[id]);
+            //google.maps.event.setCenter(LatLng);
+            google.maps.event.setCenter(markers[id]);
+            
         }
 
         // Loop through the results array and place a marker for each
