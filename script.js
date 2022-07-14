@@ -231,6 +231,12 @@ var connectors = [
     ele2: "pink",
     lineStyle: "5px solid pink",
     defaultGap: -35
+  }),
+  new muConnector({
+    ele1: "green1",
+    ele2: "red1",
+    lineStyle: "5px solid pink",
+    defaultGap: -35
   })
 ];
 
