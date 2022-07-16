@@ -1550,6 +1550,26 @@ section {
 @media (min-width: 990px) {
   #petane{
     position:absolute;
+    left: 50px; width: 400px;
+  }
+}
+
+@media (max-width: 990px) {
+  #petane{
+    position:relative;
+    margin:0 auto;
+    width:400px;
+    margin-bottom: 40px;
+    /* left: 250px; */
+  }
+}
+@media (max-width: 415px) {
+  #petane{
+    position:relative;
+    margin:0 auto;
+    width:350px;
+    margin-bottom: 40px;
+    /* left: 250px; */
   }
 }
 
