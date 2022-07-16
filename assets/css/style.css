@@ -15,6 +15,13 @@
   /* src: url(/assets/font/GalanoGrotesque-Regular.otf) format("opentype"); */
   src: url(../font/GalanoGrotesque-Regular.otf) format("opentype");
 }
+@font-face {
+  font-family: GalanoBold;
+  /* src: url(https://miyosmart.hoyaexperience.com/testing/assets/font/GalanoGrotesque-Bold.otf) format("opentype"); */
+  
+  /* src: url(/assets/font/GalanoGrotesque-Regular.otf) format("opentype"); */
+  src: url(../font/GalanoGrotesque-Bold.otf) format("opentype");
+}
 
 body {
   font-family: 'Galano';
@@ -33,9 +40,10 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Galano';
+  font-family: 'GalanoBold';
   /* font-family: 'Darker Grotesque', sans-serif; */
 }
+
 
 /*--------------------------------------------------------------
 # Preloader
@@ -86,13 +94,13 @@ h1, h2, h3, h4, h5, h6 {
 # Back to top button
 --------------------------------------------------------------*/
 .back-to-top {
-  position: fixed;
+  /* position: fixed; */
   visibility: hidden;
   opacity: 0;
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #1acc8d;
+  background: #0069B3;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -104,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #2be4a2;
+  background: #0069B3;
   color: #fff;
 }
 .back-to-top.active {
@@ -426,6 +434,9 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
+  }
+  #gambare {
+    height: 100vh;
   }
 }
 @media (max-width: 991px) {
@@ -1501,6 +1512,11 @@ section {
 @media (max-width: 1200px) {
   .faq .faq-list {
     padding: 0;
+  }
+}
+@media (min-width: 990px) {
+  #petane{
+    position:absolute;
   }
 }
 

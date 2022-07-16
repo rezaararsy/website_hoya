@@ -33,6 +33,7 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/scroll/easyScrollDots.css" rel="stylesheet">
     <style>
         .has-search .form-control {
             padding-left: 2.375rem;
@@ -73,21 +74,16 @@
                         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
                 </div>
 
-                <div class="logo">
-                    <a href="index.html" style=""><img width="80%" src="assets/logo.png" class="img-fluid animated"
-                            alt="">
-                        <!-- Uncomment below if you prefer to use an image logo -->
-                        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-                </div>
+
             </div>
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link scrollto " href="index.html">BERANDA</a></li>
-                    <li><a class="nav-link scrollto" href="tentang.html">TENTANG KAMI</a></li>
-                    <li><a class="nav-link scrollto" href="testimoni.html">TESTIMONIAL</a></li>
-                    <li><a class="nav-link scrollto" href="peta.html">CARI MiYOSMART</a></li>
-                    <li><a class="nav-link scrollto active" href="club.html">MiYOSMART CLUB</a></li>
+                    <li><a class="nav-link scrollto" href="index.html"><b>BERANDA</b></a></li>
+                    <li><a class="nav-link scrollto" href="tentang.html"><b>TENTANG KAMI</b></a></li>
+                    <li><a class="nav-link scrollto" href="testimoni.html"><b>TESTIMONIAL</b></a></li>
+                    <li><a class="nav-link scrollto" href="peta.html"><b>CARI MIYOSMART</b></a></li>
+                    <li><a class="nav-link scrollto active" href="club.html"><b>MIYOSMART CLUB</b></a></li>
                     <!-- <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li> -->
                     <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -151,7 +147,8 @@
                             </center>
 
                         </div>
-                        <div style="background: white ;border-radius: 0px 0px 20px 20px;">
+                        <div
+                            style="background: white ;border-radius: 0px 0px 20px 20px;padding-left: 40px;padding-right: 40px;">
                             <section id="contact" class="contact">
                                 <form
                                     action="https://miyosmart.hoyaexperience.com/wp-json/contact-form-7/v1/contact-forms/462/feedback"
@@ -210,8 +207,8 @@
                                             <div class="form-group mt-3">
                                                 <input type="text" class="form-control" name="nama_pemeriksa"
                                                     id="subject" placeholder="*Nama Pemeirksa (ECP)" required>
-                                                <input type="hidden" class="form-control" name="token"
-                                                    id="token" value="">
+                                                <input type="hidden" class="form-control" name="token" id="token"
+                                                    value="">
                                             </div>
                                             <div class="my-3">
                                                 <div class="loading">Loading</div>
@@ -242,21 +239,42 @@
     <footer id="footer">
 
         <div class="container">
-            <div class="copyright">
-                &copy; Copyright <strong><span>Hoya Indonesia</span></strong>. All Rights Reserved
+            <div class="row">
+                <div class="col-4">
+                    <div class="copyright">
+                        &copy; Copyright <strong><span>HOYA Indonesia</span></strong>. All Rights Reserved
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="copyright">
+                        <a href="#" class="back-to-top "><i class="bi bi-arrow-up-short"></i></a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="copyright">
+                        <a href="#" class="twitter"><i style="color: white;margin-right: 5px;"
+                                class="bx bxl-twitter"></i></a>
+                        <a href="#" class="facebook"><i style="color: white;margin-right: 5px;"
+                                class="bx bxl-facebook"></i></a>
+                        <a href="#" class="instagram"><i style="color: white;margin-right: 5px;"
+                                class="bx bxl-instagram"></i></a>
+                        <a href="#" class="google-plus"><i style="color: white;margin-right: 5px;"
+                                class="bx bxl-skype"></i></a>
+                        <a href="#" class="linkedin"><i style="color: white;margin-right: 5px;"
+                                class="bx bxl-linkedin"></i></a>
+                    </div>
+                </div>
             </div>
-            <!-- <div class="social-links mt-3">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div> -->
-        </div>
-    </footer><!-- End Footer -->
 
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
+            <!-- <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div> -->
+        </div>
+    </footer>
     <div id="preloader"></div>
 
     <!-- Vendor JS Files -->
@@ -279,12 +297,26 @@
         function getData() {
             var chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
             var token = '';
-            for(var i = 0; i < 6; i++) {
+            for (var i = 0; i < 6; i++) {
                 token += chars[Math.floor(Math.random() * chars.length)];
             }
             console.log(token);
             document.getElementById("token").value = token;
         }
+    </script>
+    <script src="assets/scroll/easyScrollDots.js"></script>
+
+    <script>
+        easyScrollDots({
+            // sets to true if you have a fixed navigation
+            'fixedNav': false,
+            // unique ID of your fixed navigation
+            'fixedNavId': '',
+            // set to true if your navigation is only sticky when scrolling up
+            'fixedNavUpward': false,
+            // the amount of pixels you wish to offset the scroll amount by
+            'offset': 30
+        });
     </script>
 
 </body>

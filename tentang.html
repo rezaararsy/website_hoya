@@ -31,10 +31,12 @@
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/css/uikit.min.css'><link rel="stylesheet" href="./style_timeline.css">
+    <!-- <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/css/uikit.min.css'><link rel="stylesheet" href="./style_timeline.css"> -->
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
+
+    <link href="assets/scroll/easyScrollDots.css" rel="stylesheet">
 
     <!-- =======================================================
   * Template Name: Bootslander - v4.7.2
@@ -58,21 +60,20 @@
                         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
                 </div>
 
-                <div class="logo">
+                <!-- <div class="logo">
                     <a href="index.html" style=""><img width="80%" src="assets/logo.png" class="img-fluid animated"
                             alt="">
-                        <!-- Uncomment below if you prefer to use an image logo -->
-                        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-                </div>
+       
+                </div> -->
             </div>
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link scrollto " href="index.html">BERANDA</a></li>
-                    <li><a class="nav-link scrollto active" href="tentang.html">TENTANG KAMI</a></li>
-                    <li><a class="nav-link scrollto" href="testimoni.html">TESTIMONIAL</a></li>
-                    <li><a class="nav-link scrollto" href="peta.html">CARI MiYOSMART</a></li>
-                    <li><a class="nav-link scrollto" href="club.html">MiYOSMART CLUB</a></li>
+                    <li><a class="nav-link scrollto" href="index.html"><b>BERANDA</b></a></li>
+                    <li><a class="nav-link scrollto active" href="tentang.html"><b>TENTANG KAMI</b></a></li>
+                    <li><a class="nav-link scrollto" href="testimoni.html"><b>TESTIMONIAL</b></a></li>
+                    <li><a class="nav-link scrollto" href="peta.html"><b>CARI MIYOSMART</b></a></li>
+                    <li><a class="nav-link scrollto" href="club.html"><b>MIYOSMART CLUB</b></a></li>
                     <!-- <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li> -->
                     <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -100,7 +101,8 @@
     </header><!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
-    <section id="hero1">
+    <section id="hero1" style="
+    height: 100vh;" data-scroll-indicator-title="MiYOSMART">
 
         <div class="">
             <div class="row justify-content-between">
@@ -116,11 +118,11 @@
                 <div style="display: flex;
                 justify-content: center;
                 align-items: center;
-                overflow: hidden" class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out"
+                overflow: hidden" id="gambare" class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out"
                     data-aos-delay="300">
                     <img width="100%" style="lex-shrink: 0;
                   min-width: 100%;
-                  min-height: 100%" src="assets/tentang1.png" class="img-fluid" alt="">
+                  min-height: 100%;object-fit: cover;" src="assets/tentang11.png" class="img-fluid" alt="">
                 </div>
             </div>
         </div>
@@ -146,20 +148,20 @@
     <main id="main">
 
         <!-- ======= About Section ======= -->
-        <section id="about" class="about" style="background: #EACFA6;">
+        <section id="about" class="about" style="background: #EACFA6;" data-scroll-indicator-title="MiYOSMART2">
             <div class="container">
 
                 <div class="row">
-                    <div class="col-xl-12 col-lg-12 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5"
-                        data-aos="fade-left">
+                    <div
+                        class="col-xl-12 col-lg-12 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
                         <center>
-                            <h1 style="color: #0069B3; font-weight: 700;">"Bersama, kita kontrol myopia pada anak"</h1>
-                            <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+                            <h1 style="color: #0069B3;">"Bersama, kita kontrol myopia pada anak"</h1>
+                            <div class="icon-box">
                                 <h5 class="">Saat ini, pada banyak kasus, myopia dikoreksi dengan lensa single Vision (1
                                     fokus) untuk membantu melihat. Hanya saja, lensa single vision tidak dibuat untuk
                                     menahan laju pertumbuhan myopia</h5>
                             </div>
-                            <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="icon-box">
                                 <h5 class="">Salah satu inovasi terkini hadir dalam lensa MiYOSMART. Lensa yang
                                     diperuntukkan untuk manajemen myopia. Bekerjasama dengan para pebniliti Universitas
                                     Politeknik Hong Kong (PolyU), kami menghadirkan spesifikasi lensa koreksi myopia dan
@@ -179,10 +181,10 @@
             <div class="container" style="margin-top: -100px;">
 
             </div>
-            <div class="row" data-aos="fade-up">
+            <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-4 col-4 mt-5 mt-md-0">
                     <div class="count-box">
-                        <img width="55%" src="assets/kenali4.png" class="" alt="">
+                        <img width="30%" src="assets/kenali4.png" class="" alt="">
                         <!-- <i class="bi bi-emoji-smile"></i> -->
                         <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
                             class="purecounter"></span>
@@ -192,7 +194,7 @@
 
                 <div class="col-lg-4 col-md-4 col-sm-4 col-4 mt-5 mt-md-0">
                     <div class="count-box">
-                        <img width="55%" src="assets/kenali6.png" class="" alt="">
+                        <img width="30%" src="assets/kenali6.png" class="" alt="">
                         <!-- <i class="bi bi-emoji-smile"></i> -->
                         <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
                             class="purecounter"></span>
@@ -202,7 +204,7 @@
 
                 <div class="col-lg-4 col-md-4 col-sm-4 col-4 mt-5 mt-md-0">
                     <div class="count-box">
-                        <img width="55%" src="assets/kenali5.png" class="" alt="">
+                        <img width="30%" src="assets/kenali5.png" class="" alt="">
                         <!-- <i class="bi bi-emoji-smile"></i> -->
                         <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
                             class="purecounter"></span>
@@ -210,7 +212,7 @@
                     </div>
                 </div>
                 <center>
-                    <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="icon-box">
                         <h5 class="" style="color: white;margin-top: 20px;">Lensa kacamata MIYOSMART dirancang
                             khusus agar Anak dapat bebas <br> beraktivitas dengan penglohatan yang maksimal.</h5>
                     </div>
@@ -221,16 +223,16 @@
             </div>
         </section>
 
-        <section id="about" class="about">
+        <section id="about" class="about" data-scroll-indicator-title="MiYOSMART3">
             <div class="container">
 
                 <div
                     class="row col-xl-12 col-lg-12 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
-                    <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="icon-box">
                         <div class="">
-                            <h2 class="" style="color: #0069B3;"><b>Peraih penghargaan dan terbukti secara klinis
+                            <h1 class="" style="color: #0069B3;"><b>Peraih penghargaan dan terbukti secara klinis
                                     sebagai solusi efektif
-                                    kontrol myopia<br>-</b> </h2>
+                                    kontrol myopia<br>-</b> </h1>
 
                         </div>
 
@@ -259,13 +261,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 py-5 px-lg-5">
-                        <h4 style="color: #0069B3;" class=""><img width="40px" style="margin-right: 10px;"
+                        <h4 style="color: black;" class=""><img width="40px" style="margin-right: 10px;"
                                 src="assets/cek.png" class="" alt="">Terbukti secara klinis, efektif menahan pertumbuhan
                             myopia.*
                         </h4>
                     </div>
                     <div class="col-lg-6 py-5 px-lg-5">
-                        <h4 style="color: #0069B3;" class=""><img width="40px" style="margin-right: 10px;"
+                        <h4 style="color: black;" class=""><img width="40px" style="margin-right: 10px;"
                                 src="assets/cek.png" class="" alt="">Lensa peraih penghargaan dan diakui dunia sebagai
                             inovasi
                             manajemen myopia..</h4>
@@ -276,16 +278,17 @@
         </section>
 
 
-        <section id="about" class="about" style="background-color:white ;">
+        <section id="about" class="about" style="background-color:white ;" data-scroll-indicator-title="MiYOSMART4">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 py-5 px-lg-5">
-                        <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="icon-box">
                             <div class="">
 
-                                <h2 class=""><img width="15%" src="assets/tek1.png" class="" alt=""> <b>Tenologi
+                                <h1 class="" style="color: #0069B3;"><img width="15%" src="assets/tek1.png" class=""
+                                        alt=""> <b>Tenologi
                                         D.I.M.S</b>
-                                </h2>
+                                </h1>
 
                             </div>
 
@@ -306,39 +309,45 @@
                             </ol>
                         </h5>
                     </div>
-                    <div class="col-lg-6 py-5 px-lg-5">
-                        <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
-                            <div class="">
+                    <div class="col-lg-6 py-5 px-lg-5 d-flex flex-row">
+                        <div class="vl" style="border-left: 4px solid #EACFA6;
+            height: 100%;margin-left: -8.5%;margin-right: 20%;"></div>
+                        <div>
+                            <div class="icon-box">
+                                <div class="">
 
-                                <h2 class=""><img width="15%" src="assets/tek2.png" class="" alt=""> <b>Eye Shield</b>
-                                </h2>
+                                    <h1 class="" style="color: #0069B3;"><img width="15%" src="assets/tek2.png" class=""
+                                            alt=""> <b>Eye Shield</b>
+                                    </h1>
+
+                                </div>
+
 
                             </div>
-
-
+                            <h5 class="title">Dukung Anak melakukan aktivitasnya secara bebas. Teknologi Eye Shield
+                                memberikan perlindungan terhadap matas si kecil. <b>Bahan lensa tahan pecah</b>, dan
+                                memiliki <b>proteksi terhadap sinar UV.</b></h5>
+                            <img style="margin-top: 20px;margin-bottom: 20px;" width="100%" src="assets/tek4.png"
+                                class="" alt="">
                         </div>
-                        <h5 class="title">Dukung Anak melakukan aktivitasnya secara bebas. Teknologi Eye Shield
-                            memberikan perlindungan terhadap matas si kecil. <b>Bahan lensa tahan pecah</b>, dan
-                            memiliki <b>proteksi terhadap sinar UV.</b></h5>
-                        <img style="margin-top: 20px;margin-bottom: 20px;" width="100%" src="assets/tek4.png" class=""
-                            alt="">
+
                     </div>
                 </div>
 
             </div>
         </section>
 
-        <section id="about" class="about">
+        <section id="about" class="about" data-scroll-indicator-title="MiYOSMART5">
             <div class="container-fluid">
 
                 <div class="row">
                     <div style="background: #EACFA6;"
                         class="col-xl-6 col-lg-6 col-xs-12 col-12 icon-boxes d-flex flex-column align-items-stretch justify-content-center"
-                        data-aos="fade-left" style="padding-right: 0;">
+                        style="padding-right: 0;">
 
-                        <!-- <div class="col-xl-6 col-lg-6 icon-boxes" data-aos="fade-left" style="padding-right: 0;"> -->
+                        <!-- <div class="col-xl-6 col-lg-6 icon-boxes"  style="padding-right: 0;"> -->
 
-                        <!-- <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+                        <!-- <div class="icon-box">
                             <div class="">
                                 <h2 class=""><b>Peraih penghargaan dan terbukti secara klinis sebagai solusi efektif
                                         kontrol myopia<br>-</b> </h2>
@@ -353,7 +362,7 @@
                         <img width="30%" src="assets/about6.png" class="" alt=""> -->
                         <!-- <h5 class="title">MIYOSMART lolos uji kontrol selama 6 tahun terhadap Anak usia 8 hingga 13
                             tahun dan terbukti efektif serta 3 konsisten dalam menahan laju pertumbuhan myopia.</h5> -->
-                        <!-- <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+                        <!-- <div class="icon-box">
                             <div class="">
 
                                 <h2 class=""><img width="15%" src="assets/tek1.png" class="" alt=""> <b>Tenologi
@@ -378,7 +387,7 @@
                             </ol>
                         </h5>
 
-                        <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="icon-box">
                             <div class="">
 
                                 <h2 class=""><img width="15%" src="assets/tek2.png" class="" alt=""> <b>Eye Shield</b>
@@ -392,7 +401,7 @@
                             memberikan perlindungan terhadap matas si kecil. <b>Bahan lensa tahan pecah</b>, dan
                             memiliki <b>proteksi terhadap sinar UV.</b></h5>
                         <img width="100%" src="assets/tek3.png" class="" alt=""> -->
-                        <div class="" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="">
 
                             <div class=""
                                 style="background-color:#EACFA6; padding: 20px; padding-top: 50px;padding-bottom: 50px;">
@@ -465,8 +474,8 @@
                                             myopia.</h6>
                                     </div>
                                 </div>
-                                
-                                
+
+
 
                                 <p class="description"></p>
 
@@ -475,10 +484,10 @@
                     </div>
 
                     <div class="col-xl-6 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-start"
-                        data-aos="fade-left" style="padding-left: 0;padding-right: 0;">
+                        style="padding-left: 0;padding-right: 0;">
 
 
-                        <div class="" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="">
 
                             <!-- <div class=""
                                 style="background-color:#EACFA6; padding: 20px; padding-top: 50px;padding-bottom: 50px;">
@@ -564,7 +573,7 @@
                                     <img width="30%" src="assets/about4.png" class="" alt="">
 
                                 </center>
-                                
+
 
                                 <p class="description"></p>
 
@@ -572,79 +581,13 @@
 
 
                         </div>
-                        
+
 
                     </div>
                 </div>
 
             </div>
         </section>
-        <div class="uk-container uk-padding">
-            <div class="uk-timeline">
-                <div class="uk-timeline-item">
-                    <div class="uk-timeline-icon">
-                        <span class="uk-badge"><span uk-icon="check"></span></span>
-                    </div>
-                    <div class="uk-timeline-content">
-                        <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
-                            <div class="uk-card-header">
-                                <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                    <h3 class="uk-card-title"><time datetime="2020-07-08">July 8</time></h3>
-                                    <span class="uk-label uk-label-success uk-margin-auto-left">Feature</span>
-                                </div>
-                            </div>
-                            <div class="uk-card-body">
-                                                    <p class="uk-text-success">Fully responsive timeline you can add to your UIkit 3 project
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="uk-timeline-item">
-                    <div class="uk-timeline-icon">
-                        <span class="uk-badge"><span uk-icon="check"></span></span>
-                    </div>
-                    <div class="uk-timeline-content">
-                        <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
-                            <div class="uk-card-header">
-                                <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                    <h3 class="uk-card-title"><time datetime="2020-07-07">July 7</time></h3>
-                                    <span class="uk-label uk-label-warning uk-margin-auto-left">Test</span>
-                                </div>
-                            </div>
-                            <div class="uk-card-body">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-                                </p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-                                </p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                        <div class="uk-timeline-item">
-                    <div class="uk-timeline-icon">
-                        <span class="uk-badge"><span uk-icon="check"></span></span>
-                    </div>
-                    <div class="uk-timeline-content">
-                        <div class="uk-card uk-card-default uk-margin-medium-bottom uk-overflow-auto">
-                            <div class="uk-card-header">
-                                <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                    <h3 class="uk-card-title"><time datetime="2020-07-06">July 6</time></h3>
-                                    <span class="uk-label uk-label-danger uk-margin-auto-left">Fix</span>
-                                </div>
-                            </div>
-                            <div class="uk-card-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-                                </p>
-                            </div>
-                        </div>
-                            
-                    </div>
-                </div>
-            </div>
-        </div>
 
     </main><!-- End #main -->
 
@@ -652,21 +595,42 @@
     <footer id="footer">
 
         <div class="container">
-            <div class="copyright">
-                &copy; Copyright <strong><span>Hoya Indonesia</span></strong>. All Rights Reserved
+            <div class="row">
+                <div class="col-4">
+                    <div class="copyright">
+                        &copy; Copyright <strong><span>HOYA Indonesia</span></strong>. All Rights Reserved
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="copyright">
+                        <a href="#" class="back-to-top "><i class="bi bi-arrow-up-short"></i></a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="copyright">
+                        <a href="#" class="twitter"><i style="color: white;margin-right: 5px;"
+                                class="bx bxl-twitter"></i></a>
+                        <a href="#" class="facebook"><i style="color: white;margin-right: 5px;"
+                                class="bx bxl-facebook"></i></a>
+                        <a href="#" class="instagram"><i style="color: white;margin-right: 5px;"
+                                class="bx bxl-instagram"></i></a>
+                        <a href="#" class="google-plus"><i style="color: white;margin-right: 5px;"
+                                class="bx bxl-skype"></i></a>
+                        <a href="#" class="linkedin"><i style="color: white;margin-right: 5px;"
+                                class="bx bxl-linkedin"></i></a>
+                    </div>
+                </div>
             </div>
-            <!-- <div class="social-links mt-3">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div> -->
-        </div>
-    </footer><!-- End Footer -->
 
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
+            <!-- <div class="social-links mt-3">
+            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          </div> -->
+        </div>
+    </footer>
     <div id="preloader"></div>
     <script src='https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit.min.js'></script>
     <script src='https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/js/uikit-icons.min.js'></script>
@@ -681,10 +645,22 @@
     <!-- <script  src="./script.js"></script> -->
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/scroll/easyScrollDots.js"></script>
 
-    
+    <script>
+        easyScrollDots({
+            // sets to true if you have a fixed navigation
+            'fixedNav': false,
+            // unique ID of your fixed navigation
+            'fixedNavId': '',
+            // set to true if your navigation is only sticky when scrolling up
+            'fixedNavUpward': false,
+            // the amount of pixels you wish to offset the scroll amount by
+            'offset': 30
+        });
+    </script>
+
+
 </body>
 
 </html>
-
-

@@ -35,6 +35,8 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <link href="assets/scroll/easyScrollDots.css" rel="stylesheet">
+
   <!-- =======================================================
   * Template Name: Bootslander - v4.7.2
   * Template URL: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/
@@ -67,11 +69,11 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="index.html">BERANDA</a></li>
-          <li><a class="nav-link scrollto" href="tentang.html">TENTANG KAMI</a></li>
-          <li><a class="nav-link scrollto" href="testimoni.html">TESTIMONIAL</a></li>
-          <li><a class="nav-link scrollto" href="peta.html">CARI MIYOSMART</a></li>
-          <li><a class="nav-link scrollto" href="club.html">MIYOSMART CLUB</a></li>
+          <li><a class="nav-link scrollto active" href="index.html"><b>BERANDA</b></a></li>
+          <li><a class="nav-link scrollto" href="tentang.html"><b>TENTANG KAMI</b></a></li>
+          <li><a class="nav-link scrollto" href="testimoni.html"><b>TESTIMONIAL</b></a></li>
+          <li><a class="nav-link scrollto" href="peta.html"><b>CARI MIYOSMART</b></a></li>
+          <li><a class="nav-link scrollto" href="club.html"><b>MIYOSMART CLUB</b></a></li>
           <!-- <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li> -->
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -99,11 +101,12 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero">
+  <section id="hero" data-scroll-indicator-title="MiYOSMART" style="
+  height: 100vh;">
 
     <div class="">
       <div class="row justify-content-between">
-        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
+        <div style="" class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
           <div data-aos="zoom-out" style="padding: 100px;">
             <h1>MiYOSMART: <br>
               Solusi cerdas menahan pertumbuhan minus anak.</h1>
@@ -115,10 +118,11 @@
         <div style="display: flex;
         justify-content: center;
         align-items: center;
-        overflow: hidden" class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
-          <img width="100%" style="lex-shrink: 0;
+        overflow: hidden;" id="gambare" class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out"
+          data-aos-delay="300">
+          <img width="100%" height="100%" style="lex-shrink: 0;
           min-width: 100%;
-          min-height: 100%" src="assets/header1.jpg" class="img-fluid" alt="">
+          min-height: 100%;object-fit: cover;" src="assets/header11.png" class="img-fluid" alt="">
         </div>
       </div>
     </div>
@@ -143,19 +147,18 @@
 
   <main id="main">
 
-    <section id="about" class="about">
+    <section id="about" class="about" data-scroll-indicator-title="Apa Itu Myopia?">
       <div class="container">
 
         <div class="row">
           <div
-            class="col-xl-6 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5"
-            data-aos="fade-left">
+            class="col-xl-6 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
 
 
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+            <div class="">
               <div class="">
-                <h1 class="" style="color: #0069B3;font-weight: 400;"><b>Apa itu Myopia ? </b> <img width="30%"
-                    src="assets/A03.png" class="" alt=""></h2>
+                <h1 class="" style="color: #0069B3;"><b>Apa itu Myopia ? </b> <img width="30%" src="assets/A03.png"
+                    class="" alt=""></h2>
 
               </div>
 
@@ -170,11 +173,10 @@
           </div>
 
           <div
-            class="col-xl-6 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5"
-            data-aos="fade-left">
+            class="col-xl-6 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
 
 
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
               <div class="">
                 <!-- <h3 class="">Ilustrasi Mata Myopia</h3> -->
 
@@ -197,20 +199,19 @@
 
         <div class="row">
           <div
-            class="col-xl-4 col-lg-4 icon-boxes d-flex flex-column align-items-center justify-content-start py-5 px-lg-5"
-            data-aos="fade-left">
+            class="col-xl-4 col-lg-4 icon-boxes d-flex flex-column align-items-center justify-content-start py-5 px-lg-5">
 
 
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
               <h3 style="color: white;" class="">Myopia telah menjadi perhatian & masalah penglihatan dunia. <br> -</h3>
             </div>
           </div>
 
-          <div class="col-xl-4 col-lg-4  d-flex flex-column align-items-stretch justify-content-start py-5 px-lg-5"
-            data-aos="fade-left">
+          <div class="col-xl-4 col-lg-4  d-flex flex-row align-items-stretch justify-content-start py-5 px-lg-5">
 
-
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+            <div class="vl" style="border-left: 4px solid #EACFA6;
+            height: 100%;margin-left: -20%;margin-right: 20%;"></div>
+            <div class="icon-box">
               <!-- <div class="icon"><img src="assets/header.png" class="img-fluid animated" alt=""></div> -->
               <div class="icon"><img src="assets/about1.png" class="img-fluid animated" alt=""></div>
 
@@ -220,11 +221,10 @@
               <p class="description"></p>
             </div>
           </div>
-          <div class="col-xl-4 col-lg-4  d-flex flex-column align-items-stretch justify-content-start py-5 px-lg-5"
-            data-aos="fade-left">
+          <div class="col-xl-4 col-lg-4  d-flex flex-column align-items-stretch justify-content-start py-5 px-lg-5">
 
 
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
               <!-- <div class="icon"><img src="assets/header.png" class="img-fluid animated" alt=""></div> -->
               <div class="icon"><img width="100%" src="assets/about2.png" class="img-fluid animated" alt=""></div>
 
@@ -245,7 +245,7 @@
     <!-- <section id="counts" class="counts">
       <div class="container">
 
-        <div class="row" data-aos="fade-up">
+        <div class="row" >
           <center>
             <h3 style="margin-bottom: 30px;font-size: 28px;
           font-weight: 700;
@@ -295,15 +295,15 @@
       </div>
     </section> -->
 
-    <section id="counts" class="counts">
-      <div class="container" style="padding-left: 100px;padding-right:100px">
+    <section id="counts" class="counts" data-scroll-indicator-title="Kenali Gejalanya">
+      <!-- <div class="container" style="padding-left: 100px;padding-right:100px"> -->
+      <div class="container" style="">
+        <h3 style="margin-bottom: 30px;
+        color: #0069B3;" class="">Kenali Gejalanya <br>-</h3>
+        <div class="row">
 
-        <div class="row" data-aos="fade-up">
-          <center>
-            <h3 style="margin-bottom: 30px;font-size: 28px;
-          font-weight: 700;
-          color: #0069B3;" class="">Kenali Gejalanya</h3>
-          </center>
+
+
           <div class="col-lg-3 col-md-6">
             <div class="count-box">
               <img width="100%" src="assets/kenali1.png" class="" alt="">
@@ -352,12 +352,12 @@
     <section id="counts2" class="counts2">
       <div class="container">
 
-        <div class="row" data-aos="fade-up">
-          <center>
-            <h3 style="margin-bottom: 30px;font-size: 28px;
+        <div class="row">
+
+          <h3 style="margin-bottom: 30px;font-size: 28px;
           font-weight: 700;
-          color: #0069B3;" class="">Kenali Penyebabnya</h3>
-          </center>
+          color: #0069B3;" class="">Kenali Penyebabnya <br>-</h3>
+
           <div class="row col-lg-6 col-md-6" style="margin-bottom: 40px;">
             <div class="col-lg-4 col-md-4 d-flex justify-content-center">
               <div class="count-box" style="width: 100px;height: 100px; margin-bottom: 30px">
@@ -422,20 +422,20 @@
       </div>
     </section><!-- End Counts Section -->
 
-    <section id="about" class="about">
+    <section id="about" class="about" data-scroll-indicator-title="Penanganan Myopia">
       <div class="">
 
         <div class="row">
           <div class="col-xl-4 col-lg-4 d-flex flex-column align-items-center justify-content-center py-5 px-lg-5"
-            data-aos="fade-left" style="background-color:#0069B3 ;">
+            style="background-color:#0069B3 ;">
             <div class="row">
               <div class="col-lg-8">
-                <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+                <div class="icon-box">
                   <h3 style="color: white;" class="">Mengapa Myopia Perlu Penanganan Sejak Dini?</h3>
                 </div>
               </div>
               <div class="col-lg-4">
-                <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+                <div class="icon-box">
                   <img style="width: 100px" src="assets/sebab5.png" class="img-fluid animated" alt="">
                 </div>
               </div>
@@ -445,7 +445,7 @@
           </div>
 
           <div class="col-xl-8 col-lg-8  d-flex flex-row align-items-center justify-content-between py-5 px-lg-5"
-            data-aos="fade-left" style="background-color:#EACFA6 ;">
+            style="background-color:#EACFA6 ;">
 
             <h3 class="title" style="color: #0069B3;text-align: center;"><b>Usia Muda</b></h3>
             <i style="font-size: 2.5em;color: #0069B3;" class="bi bi-arrow-right"></i>
@@ -454,7 +454,7 @@
             <i style="font-size: 2.5em;color: #0069B3;" class="bi bi-arrow-right"></i>
             <h3 class="title" style="color: #0069B3;text-align: center;"><b>Risiko terkena myopia maupun <br> kelainan
                 penglihatan lebih tinggi</b></h3>
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
               <!-- <div class="icon"><img src="assets/header.png" class="img-fluid animated" alt=""></div> -->
               <!-- <div class="icon"><img src="assets/about1.png" class="img-fluid animated" alt=""></div>
               -->
@@ -471,7 +471,7 @@
     <!-- <section id="counts3" class="counts3">
       <div class="container">
 
-        <div class="row" data-aos="fade-up">
+        <div class="row" >
           <center>
             <h3 style="margin-bottom: 30px;font-size: 28px;
           font-weight: 700;
@@ -486,50 +486,54 @@
     </section> -->
 
     <section id="about" class="about">
-      <div class="container">
+      <div class="container-fluid">
 
         <div class="row">
-          <div class="col-xl-7 col-lg-7 icon-boxes d-flex flex-column align-items-stretch justify-content-center"
-            data-aos="fade-left">
-
-
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
-              <div class="">
-                <div class="row">
-                  <div class="col-10">
-                    <h2 class=""><b>Myopia dapat ditangani, tak hanya dikoreksi <br>-</b> </h2>
+          <div class="col-xl-6 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center"
+            style="padding-right: 0;padding-left: 0;">
+            <div style="padding-left: 50px;padding-right:50px">
+              <div class="icon-box">
+                <div class="">
+                  <div class="row">
+                    <div class="col-10">
+                      <h1 class="" style="color: #0069B3;"><b>Myopia dapat ditangani, tak hanya dikoreksi <br>-</b>
+                      </h1>
+                    </div>
+                    <div class="col-2">
+                      <img width="100%" src="assets/A16.png" class="img-fluid animated" alt="">
+                    </div>
                   </div>
-                  <div class="col-2">
-                    <img width="100%" src="assets/A16.png" class="img-fluid animated" alt="">
-                  </div>
+
+                  <!-- <img width="30%" src="assets/about4.png" class="" alt=""> -->
                 </div>
 
-                <!-- <img width="30%" src="assets/about4.png" class="" alt=""> -->
+
               </div>
+              <h5 class="title">Myopia sebaiknya ditangani sedini mungkin, karena myopia dapat terus berkembang dan
+                apabila dibiarkan dapat menyebabkan masalah penglihatan berkepanjangan</h5>
+              <p class="description"></p>
+              <div class="icon-box">
+                <div class="">
+                  <h4 class="">Mengapa kita perlu mengontrol myopia ? <br>-</h4>
+                  <!-- <img width="30%" src="assets/about4.png" class="" alt=""> -->
+                </div>
 
 
-            </div>
-            <h5 class="title">Myopia sebaiknya ditangani sedini mungkin, karena myopia dapat terus berkembang dan
-              apabila dibiarkan dapat menyebabkan masalah penglihatan berkepanjangan</h5>
-            <p class="description"></p>
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
-              <div class="">
-                <h4 class="">Mengapa kita perlu mengontrol myopia ? <br>-</h4>
-                <!-- <img width="30%" src="assets/about4.png" class="" alt=""> -->
               </div>
-
-
+              <h5 class="title">Hasil analisi beberapa penelitian menjelaskan bahwa semakin tingi ukuran myopia, semakin
+                tinggi risiko permasalahan penglihatan lainnya</h5>
+              <p class="description"></p>
+              <br>
+              <br>
             </div>
-            <h5 class="title">Hasil analisi beberapa penelitian menjelaskan bahwa semakin tingi ukuran myopia, semakin
-              tinggi risiko permasalahan penglihatan lainnya</h5>
-            <p class="description"></p>
-            <br>
-            <br>
 
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+
+
+
+            <!-- <div class="icon-box">
               <div class="">
                 <h2 class=""><b> Inovasi terkini dalam opsi kontrol myopia <br> -</b></h2>
-                <!-- <img width="30%" src="assets/about4.png" class="" alt=""> -->
+        
               </div>
 
 
@@ -537,17 +541,16 @@
             <h5 class="title"><b>Lensa kacamata MiYOSMART merupakan salah satu inovasi terkini dalam opsi kontrol
                 myopia. dirancang khusu untuk bagi anak-anak, agar mereka dapat beraktivitas dengan bebas, demi masa
                 depan</b></h5>
-            <p class="description"></p>
+            <p class="description"></p> -->
 
           </div>
 
-          <div class="col-xl-5 col-lg-5 icon-boxes d-flex flex-column align-items-stretch justify-content-start"
-            data-aos="fade-left">
+          <div class="col-xl-6 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-start"
+            style="padding-right: 0;padding-left: 0;">
 
 
-            <div class="" data-aos="zoom-in" data-aos-delay="200">
-              <div class=""
-                style="height:100%; background-color:#0069B3; padding: 20px; padding-top: 150px;padding-bottom: 250px;">
+            <div class="">
+              <div class="" style="height:100%; background-color:#0069B3; padding: 20px;">
                 <center>
                   <!-- <h5 style="color: white;" class="">Kenali Opsi Kontrol Myopia</h5> -->
                   <img width="100%" src="assets/kenali99.png" class="" alt="">
@@ -615,19 +618,20 @@
       </div>
     </section>
 
-    <section id="about" class="about" style="background-color:#EACFA6 ;">
+    <section id="about" class="about" style="background-color:#EACFA6 ;"
+      data-scroll-indicator-title="Mengapa MiYOSMART">
       <div class="container">
         <div class="row">
           <div class="col-lg-6  icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5"
             style="">
             <div class="row" style="background-color:#EACFA6; padding: 20px;">
               <div class="col-lg-8">
-                <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+                <div class="icon-box">
                   <h3 style="" class=""> <b>Mengapa MiYOSMART ? <br>- </b> </h3>
                 </div>
               </div>
               <div class="col-lg-4">
-                <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+                <div class="icon-box">
                   <img width="100px" src="assets/about3.png" class="" alt="">
                 </div>
               </div>
@@ -644,27 +648,43 @@
             </div> -->
           </div>
           <div class="col-lg-6  icon-boxes d-flex flex-column align-items-stretch justify-content-start py-5 px-lg-5">
-            <div class="row" style="margin-top: 15px;margin-bottom:15px">
-              <h4 style="color: #0069B3;" class=""><img width="40px" style="margin-right: 10px;" src="assets/cek.png"
-                  class="" alt="">Terbukti
-                secara klinis, <b>efektif</b> menahan pertumbuhan
-                myopia</h4>
+            <div class="row">
+              <div class="col-6">
+                <div class="row" style="margin-top: 15px;margin-bottom:15px">
+                  <h4 style="color: #0069B3;" class=""><img width="40px" style="margin-right: 10px;"
+                      src="assets/cek.png" class="" alt="">Terbukti
+                    secara klinis, <b>efektif</b> menahan pertumbuhan
+                    myopia</h4>
+                </div>
+
+              </div>
+              <div class="col-6">
+                <div class="row" style="margin-top: 15px;margin-bottom:15px">
+                  <h4 style="color: #0069B3;" class=""><img width="40px" style="margin-right: 10px;"
+                      src="assets/cek.png" class="" alt="">Lensa <b>peraih penghargaan dan diakui</b> dunia sebagai
+                    inovasi manajemen myopia.</h4>
+                </div>
+              </div>
             </div>
-            <div class="row" style="margin-top: 15px;margin-bottom:15px">
-              <h4 style="color: #0069B3;" class=""><img width="40px" style="margin-right: 10px;" src="assets/cek.png"
-                  class="" alt="">Lensa <b>peraih penghargaan dan diakui</b> dunia sebagai
-                inovasi manajemen myopia.</h4>
+            <div class="row">
+              <div class="col-6">
+                <div class="row" style="margin-top: 15px;margin-bottom:15px">
+                  <h4 style="color: #0069B3;" class=""><img width="40px" style="margin-right: 10px;"
+                      src="assets/cek.png" class="" alt="">Solusi inovatif pada teknologi manajemen myopia yang <b>unik
+                      dan terkini</b></h4>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="row" style="margin-top: 15px;margin-bottom:15px">
+                  <h4 style="color: #0069B3;" class=""><img width="40px" style="margin-right: 10px;"
+                      src="assets/cek.png" class="" alt="">Ramah bagi anak-anak, <b>mudah</b> digunakan dan <b>aman.</b>
+                  </h4>
+                </div>
+              </div>
             </div>
-            <div class="row" style="margin-top: 15px;margin-bottom:15px">
-              <h4 style="color: #0069B3;" class=""><img width="40px" style="margin-right: 10px;" src="assets/cek.png"
-                  class="" alt="">Solusi inovatif pada teknologi manajemen myopia yang <b>unik
-                  dan terkini</b></h4>
-            </div>
-            <div class="row" style="margin-top: 15px;margin-bottom:15px">
-              <h4 style="color: #0069B3;" class=""><img width="40px" style="margin-right: 10px;" src="assets/cek.png"
-                  class="" alt="">Ramah bagi anak-anak, <b>mudah</b> digunakan dan <b>aman.</b>
-              </h4>
-            </div>
+
+
+
           </div>
         </div>
       </div>
@@ -676,7 +696,7 @@
 
         <div
           class="row col-xl-12 col-lg-12 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
-          <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
+          <div class="icon-box">
             <div class="">
               <h1 class="" style="color: #0069B3;"><b>Inovasi terkini dalam opsi kontrol myopia <br>
                   - </h1>
@@ -687,14 +707,16 @@
           </div>
           <div class="row">
             <div class="col-lg-12">
-              <h5 class="title">Lensa kacamata MiYOSMART merupakan salah satu inovasi terkini dalam opsi kontrol myopia,
-                dirancang khusus untuk bagi anak-anak, agar mereka dapat beraktivitas dengan dengan bebas, demi masa
-                depan.</h5>
+              <h5 class="title"><b> Lensa kacamata MiYOSMART merupakan salah satu inovasi terkini dalam opsi kontrol
+                  myopia,
+                  dirancang khusus untuk bagi anak-anak, agar mereka dapat beraktivitas dengan dengan bebas, demi masa
+                  depan.</b></h5>
               <div class="text-center text-lg-start" style="margin-top: 20px;">
-                <a href="#about" class="btn-get-started2 scrollto">CARI TAHU LEBIH LANJUT</a>
+                <a href="#about" class="btn-get-started2 scrollto"> <b>CARI TAHU LEBIH LANJUT</b> </a>
               </div>
             </div>
           </div>
+
 
           <p class="description"></p>
 
@@ -708,9 +730,28 @@
   <footer id="footer">
 
     <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Hoya Indonesia</span></strong>. All Rights Reserved
+      <div class="row">
+        <div class="col-4">
+          <div class="copyright">
+            &copy; Copyright <strong><span>HOYA Indonesia</span></strong>. All Rights Reserved
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="copyright">
+            <a href="#" class="back-to-top "><i class="bi bi-arrow-up-short"></i></a>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="copyright">
+            <a href="#" class="twitter"><i style="color: white;margin-right: 5px;" class="bx bxl-twitter"></i></a>
+            <a href="#" class="facebook"><i style="color: white;margin-right: 5px;" class="bx bxl-facebook"></i></a>
+            <a href="#" class="instagram"><i style="color: white;margin-right: 5px;" class="bx bxl-instagram"></i></a>
+            <a href="#" class="google-plus"><i style="color: white;margin-right: 5px;" class="bx bxl-skype"></i></a>
+            <a href="#" class="linkedin"><i style="color: white;margin-right: 5px;" class="bx bxl-linkedin"></i></a>
+          </div>
+        </div>
       </div>
+
       <!-- <div class="social-links mt-3">
         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -721,8 +762,7 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
@@ -735,6 +775,20 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/scroll/easyScrollDots.js"></script>
+
+  <script>
+    easyScrollDots({
+      // sets to true if you have a fixed navigation
+      'fixedNav': false,
+      // unique ID of your fixed navigation
+      'fixedNavId': '',
+      // set to true if your navigation is only sticky when scrolling up
+      'fixedNavUpward': false,
+      // the amount of pixels you wish to offset the scroll amount by
+      'offset': 30
+    });
+  </script>
 
 </body>
 
