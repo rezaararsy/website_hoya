@@ -22,6 +22,13 @@
   /* src: url(/assets/font/GalanoGrotesque-Regular.otf) format("opentype"); */
   src: url(../font/GalanoGrotesque-Bold.otf) format("opentype");
 }
+@font-face {
+  font-family: GalanoLight;
+  /* src: url(https://miyosmart.hoyaexperience.com/testing/assets/font/GalanoGrotesque-Light.otf) format("opentype"); */
+  
+  /* src: url(/assets/font/GalanoGrotesque-Regular.otf) format("opentype"); */
+  src: url(../font/GalanoGrotesque-Light.otf) format("opentype");
+}
 
 body {
   font-family: 'Galano';
@@ -207,7 +214,7 @@ h6{
   /* padding: 10px 0 10px 30px; */
   font-size: 13px;
   font-weight: 500;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   color: white;
   white-space: nowrap;
   transition: 0.3s;
@@ -420,24 +427,30 @@ h6{
   font-size: 24px;
 }
 .btn-get-started2 {
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 10px 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 5px;
   border-radius: 50px;
   transition: 0.5s;
   color: #0069B3;
   background: #EACFA6;
 }
 #hero .btn-get-started {
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 10px 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 5px;
   border-radius: 50px;
   transition: 0.5s;
   color: #0069B3;
@@ -537,24 +550,30 @@ h6{
   font-size: 24px;
 }
 .btn-get-started2 {
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 10px 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 5px;
   border-radius: 50px;
   transition: 0.5s;
   color: #0069B3;
   background: #EACFA6;
 }
 #hero1 .btn-get-started {
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 10px 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 5px;
   border-radius: 50px;
   transition: 0.5s;
   color: white;
@@ -1718,7 +1737,7 @@ iframe {
 }
 #footer .footer-top .footer-info {
   margin-bottom: 15px;
-  background: #010246;
+  /* background: #010246; */
   color: #fff;
   border-top: 4px solid #1acc8d;
   text-align: center;
@@ -1735,7 +1754,7 @@ iframe {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
 }
 #footer .footer-top .social-links a {
   font-size: 18px;
@@ -1823,9 +1842,12 @@ iframe {
   background: #149f6e;
 }
 #footer .copyright {
-  border-top: 1px solid #010479;
+  /* border-top: 1px solid #010479; */
   text-align: center;
   padding-top: 30px;
+}
+#footer .copyright i{
+  font-size: 1.5rem;
 }
 #footer .credits {
   padding-top: 10px;
