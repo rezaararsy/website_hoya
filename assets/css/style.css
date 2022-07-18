@@ -10,24 +10,24 @@
 --------------------------------------------------------------*/
 @font-face {
   font-family: Galano;
-  src: url(https://miyosmart.hoyaexperience.com/testing/assets/font/GalanoGrotesque-Regular.otf) format("opentype");
+  /* src: url(https://miyosmart.hoyaexperience.com/testing/assets/font/GalanoGrotesque-Regular.otf) format("opentype"); */
   
   /* src: url(/assets/font/GalanoGrotesque-Regular.otf) format("opentype"); */
-  /* src: url(../font/GalanoGrotesque-Regular.otf) format("opentype"); */
+  src: url(../font/GalanoGrotesque-Regular.otf) format("opentype");
 }
 @font-face {
   font-family: GalanoBold;
-  src: url(https://miyosmart.hoyaexperience.com/testing/assets/font/GalanoGrotesque-Bold.otf) format("opentype");
+  /* src: url(https://miyosmart.hoyaexperience.com/testing/assets/font/GalanoGrotesque-Bold.otf) format("opentype"); */
   
   /* src: url(/assets/font/GalanoGrotesque-Regular.otf) format("opentype"); */
-  /* src: url(../font/GalanoGrotesque-Bold.otf) format("opentype"); */
+  src: url(../font/GalanoGrotesque-Bold.otf) format("opentype");
 }
 @font-face {
   font-family: GalanoLight;
-  src: url(https://miyosmart.hoyaexperience.com/testing/assets/font/GalanoGrotesque-Light.otf) format("opentype");
+  /* src: url(https://miyosmart.hoyaexperience.com/testing/assets/font/GalanoGrotesque-Light.otf) format("opentype"); */
   
   /* src: url(/assets/font/GalanoGrotesque-Regular.otf) format("opentype"); */
-  /* src: url(../font/GalanoGrotesque-Light.otf) format("opentype"); */
+  src: url(../font/GalanoGrotesque-Light.otf) format("opentype");
 }
 
 body {
