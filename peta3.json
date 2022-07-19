@@ -1,0 +1,30 @@
+[{
+    "id": 1,
+    "judul": "Otcom",
+    "longitude": -6.1731346,
+    "latitude": 106.8391009,
+    "alamat":"Jalan Ijen",
+    "type": "Sensity"
+  }, {
+    "id": 2,
+    "judul": "Kanlam",
+    "longitude": -6.1782333,
+    "latitude": 106.8034144,
+    "alamat":"Jalan Ijen",
+    "type": "MIYOSMART"
+  }, {
+    "id": 3,
+    "judul": "Overhold",
+    "longitude": -6.1763024,
+    "latitude": 106.8228356,
+    "alamat":"Jalan Ijen",
+    "type": "MIYOSMART"
+  }, {
+    "id": 4,
+    "judul": "Pannier",
+    "longitude": -6.163529,
+    "latitude": 106.7603774,
+    "alamat":"Jalan Ijen",
+    "type": "Hoya Center Dealer"
+  }
+]

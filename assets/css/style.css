@@ -244,7 +244,7 @@ h6{
   transition: all 0.3s ease-in-out 0s; 
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #2C2A28;
+  color: #0069B3;
   background-color: #FDBA4D;
   border-radius: 14px 14px 0px 0px;
 }

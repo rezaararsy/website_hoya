@@ -490,8 +490,8 @@
         function initMap() {
             var petanya = [];
             map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 12,
-                center: new google.maps.LatLng(-6.200000, 106.816666),
+                zoom: 5,
+                center: new google.maps.LatLng(-2.1977338, 114.6352585),
                 mapTypeId: "terrain",
             });
             var infoWindow = new google.maps.InfoWindow();
@@ -528,7 +528,7 @@
                 url: "assets/A46.png", // url
                 scaledSize: new google.maps.Size(50, 100), // scaled size
                 origin: new google.maps.Point(0, 0), // origin
-                anchor: new google.maps.Point(0, 0) // anchor
+                anchor: new google.maps.Point(0, 100) // anchor
             };
             var latlngbounds = new google.maps.LatLngBounds();
             for (let i = 0; i < objek.length; i++) {

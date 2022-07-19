@@ -1,30 +1,281 @@
-[{
-    "id": 1,
-    "judul": "Otcom",
-    "longitude": -6.1731346,
-    "latitude": 106.8391009,
-    "alamat":"Jalan Ijen",
-    "type": "Sensity"
-  }, {
-    "id": 2,
-    "judul": "Kanlam",
-    "longitude": -6.1782333,
-    "latitude": 106.8034144,
-    "alamat":"Jalan Ijen",
-    "type": "MIYOSMART"
-  }, {
-    "id": 3,
-    "judul": "Overhold",
-    "longitude": -6.1763024,
-    "latitude": 106.8228356,
-    "alamat":"Jalan Ijen",
-    "type": "MIYOSMART"
-  }, {
-    "id": 4,
-    "judul": "Pannier",
-    "longitude": -6.163529,
-    "latitude": 106.7603774,
-    "alamat":"Jalan Ijen",
-    "type": "Hoya Center Dealer"
-  }
+[
+        {
+            "id": "1",
+            "type": "MIYOSMART",
+            "judul": "Dr. Shindy Je Optical Clinic",
+            "OpticTYPE": "IO",
+            "alamat": "Medan",
+            "longitude": 3.5854053,
+            "latitude": 98.6848469
+        },
+        {
+            "id": "2",
+            "type": "MIYOSMART",
+            "judul": "Kenan Optical",
+            "OpticTYPE": "IO",
+            "alamat": "Jakarta",
+            "longitude": -6.2707784,
+            "latitude": 106.7567614
+        },
+        {
+            "id": "3",
+            "type": "MIYOSMART",
+            "judul": "Optik Bipola - Boulevard Kelapa Gading",
+            "OpticTYPE": "IO",
+            "alamat": "Jakarta",
+            "longitude": -6.1593861,
+            "latitude": 106.9041702
+        },
+        {
+            "id": "4",
+            "type": "MIYOSMART",
+            "judul": "VIO Optical Clinic - Gading Serpong ",
+            "OpticTYPE": "IO",
+            "alamat": "Tangsel",
+            "longitude": -6.2342749,
+            "latitude": 106.5976563
+        },
+        {
+            "id": "5",
+            "type": "MIYOSMART",
+            "judul": "VIO Optical Clinic - Harapan Indah",
+            "OpticTYPE": "IO",
+            "alamat": "Bekasi",
+            "longitude": -6.1724669,
+            "latitude": 106.9749305
+        },
+        {
+            "id": "6",
+            "type": "MIYOSMART",
+            "judul": "ZAF Eye Care",
+            "OpticTYPE": "IO",
+            "alamat": "Jakarta",
+            "longitude": -6.2771049,
+            "latitude": 106.815671
+        },
+        {
+            "id": "7",
+            "type": "MIYOSMART",
+            "judul": "Optik ITC Mangga 2",
+            "OpticTYPE": "IO",
+            "alamat": "Jakarta",
+            "longitude": -6.1357141,
+            "latitude": 106.8246423
+        },
+        {
+            "id": "8",
+            "type": "MIYOSMART",
+            "judul": "Optik SEIS - 23 Paskal",
+            "OpticTYPE": "Chain",
+            "alamat": "Bandung",
+            "longitude": -6.9055542,
+            "latitude": 107.5966903
+        },
+        {
+            "id": "9",
+            "type": "MIYOSMART",
+            "judul": "Optik SEIS - AEON Mall BSD",
+            "OpticTYPE": "Chain",
+            "alamat": "Tangsel",
+            "longitude": -6.3046302,
+            "latitude": 106.643904
+        },
+        {
+            "id": "10",
+            "type": "MIYOSMART",
+            "judul": "Optik SEIS - AEON Sentul City",
+            "OpticTYPE": "Chain",
+            "alamat": "Bogor",
+            "longitude": -6.5530452,
+            "latitude": 106.7543603
+        },
+        {
+            "id": "11",
+            "type": "MIYOSMART",
+            "judul": "Optik SEIS - Bali Galleria",
+            "OpticTYPE": "Chain",
+            "alamat": "Bali",
+            "longitude": -8.7234952,
+            "latitude": 115.1842964
+        },
+        {
+            "id": "12",
+            "type": "MIYOSMART",
+            "judul": "Optik SEIS - BIG Mall",
+            "OpticTYPE": "Chain",
+            "alamat": "Samarinda",
+            "longitude": -0.5250121,
+            "latitude": 117.1159398
+        },
+        {
+            "id": "13",
+            "type": "MIYOSMART",
+            "judul": "Optik SEIS - Gaia Bumi Raya City",
+            "OpticTYPE": "Chain",
+            "alamat": "Kabupaten Kubu",
+            "longitude": -0.0778194,
+            "latitude": 109.3681176
+        },
+        {
+            "id": "14",
+            "type": "MIYOSMART",
+            "judul": "Optik SEIS - Grand Batam",
+            "OpticTYPE": "Chain",
+            "alamat": "Batam",
+            "longitude": 1.1361706,
+            "latitude": 104.0064622
+        },
+        {
+            "id": "15",
+            "type": "MIYOSMART",
+            "judul": "Optik SEIS - Mal Metropolitan",
+            "OpticTYPE": "Chain",
+            "alamat": "Bekasi",
+            "longitude": -6.2484415,
+            "latitude": 106.9908156
+        },
+        {
+            "id": "16",
+            "type": "MIYOSMART",
+            "judul": "Optik SEIS - Mal Taman Anggrek",
+            "OpticTYPE": "Chain",
+            "alamat": "Jakarta",
+            "longitude": -6.1785831,
+            "latitude": 106.7922664
+        },
+        {
+            "id": "17",
+            "type": "MIYOSMART",
+            "judul": "Optik SEIS - Mall Ciputra Cibubur",
+            "OpticTYPE": "Chain",
+            "alamat": "Bekasi",
+            "longitude": -6.383185,
+            "latitude": 106.9260538
+        },
+        {
+            "id": "18",
+            "type": "MIYOSMART",
+            "judul": "Optik SEIS - Mall Ciputra Semarang",
+            "OpticTYPE": "Chain",
+            "alamat": "Semarang",
+            "longitude": -6.988813,
+            "latitude": 110.424237
+        },
+        {
+            "id": "19",
+            "type": "MIYOSMART",
+            "judul": "Optik SEIS - Mall SKA",
+            "OpticTYPE": "Chain",
+            "alamat": "Pekanbaru",
+            "longitude": 0.4991918,
+            "latitude": 101.4176083
+        },
+        {
+            "id": "20",
+            "type": "MIYOSMART",
+            "judul": "Optik SEIS - Manado Town Square",
+            "OpticTYPE": "Chain",
+            "alamat": "Manado",
+            "longitude": 1.4723601,
+            "latitude": 124.8317936
+        },
+        {
+            "id": "21",
+            "type": "MIYOSMART",
+            "judul": "Optik SEIS - Melawai 65",
+            "OpticTYPE": "Chain",
+            "alamat": "Jakarta",
+            "longitude": -6.245661,
+            "latitude": 106.7976021
+        },
+        {
+            "id": "22",
+            "type": "MIYOSMART",
+            "judul": "Optik SEIS - MKG 3",
+            "OpticTYPE": "Chain",
+            "alamat": "Jakarta",
+            "longitude": -6.1576335,
+            "latitude": 106.9079071
+        },
+        {
+            "id": "23",
+            "type": "MIYOSMART",
+            "judul": "Optik SEIS - Palembang Indah Mall",
+            "OpticTYPE": "Chain",
+            "alamat": "Palembang",
+            "longitude": -2.9847511,
+            "latitude": 104.7538373
+        },
+        {
+            "id": "24",
+            "type": "MIYOSMART",
+            "judul": "Optik SEIS - Paragon City Mall",
+            "OpticTYPE": "Chain",
+            "alamat": "Semarang",
+            "longitude": -6.9789786,
+            "latitude": 110.415902
+        },
+        {
+            "id": "25",
+            "type": "MIYOSMART",
+            "judul": "Optik SEIS - PIK Avenue",
+            "OpticTYPE": "Chain",
+            "alamat": "Jakarta",
+            "longitude": -6.1090517,
+            "latitude": 106.7407457
+        },
+        {
+            "id": "26",
+            "type": "MIYOSMART",
+            "judul": "Optik SEIS - PIM 3",
+            "OpticTYPE": "Chain",
+            "alamat": "Jakarta",
+            "longitude": -6.2656451,
+            "latitude": 106.7842565
+        },
+        {
+            "id": "27",
+            "type": "MIYOSMART",
+            "judul": "Optik SEIS - Plaza Ambarrukmo",
+            "OpticTYPE": "Chain",
+            "alamat": "Yogyakarta",
+            "longitude": -7.7825134,
+            "latitude": 110.4012865
+        },
+        {
+            "id": "28",
+            "type": "MIYOSMART",
+            "judul": "Optik SEIS - Sun Plaza",
+            "OpticTYPE": "Chain",
+            "alamat": "Medan",
+            "longitude": 3.5817047,
+            "latitude": 98.6715373
+        },
+        {
+            "id": "29",
+            "type": "MIYOSMART",
+            "judul": "Optik SEIS - Trans Studio Makassar",
+            "OpticTYPE": "Chain",
+            "alamat": "Makassar",
+            "longitude": -5.1597218,
+            "latitude": 119.3945372
+        },
+        {
+            "id": "30",
+            "type": "MIYOSMART",
+            "judul": "Optik SEIS - Tunjungan Plaza 3",
+            "OpticTYPE": "Chain",
+            "alamat": "Surabaya",
+            "longitude": -7.2614011,
+            "latitude": 112.7387791
+        },
+        {
+            "id": "31",
+            "type": "MIYOSMART",
+            "judul": "Optik SEIS - Plaza Balikpapan",
+            "OpticTYPE": "Chain",
+            "alamat": "Balikpapan",
+            "longitude": -1.2775077,
+            "latitude": 116.838503
+        }
 ]
