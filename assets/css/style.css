@@ -158,19 +158,22 @@ h6{
 # Header
 --------------------------------------------------------------*/
 #header {
-  height: 80px;
+  /* height: 40px; */
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
   /* background: rgba(1, 4, 136, 0.9); */
   background:#0069B3;
+  /* padding-bottom: 0; */
+  padding-top: 0.4%;
+  padding-bottom: 0%;
 }
 #header.header-transparent {
   background: transparent;
 }
 #header.header-scrolled {
   background: #0069B3;
-  height: 60px;
+  /* height: 40px; */
 }
 #header .logo h1 {
   font-size: 28px;
@@ -1116,7 +1119,7 @@ section {
 
 .counts2 {
   background: white;
-  padding: 70px 0 60px;
+  padding: 0px 0 60px;
 }
 .counts2 .count-box {
   /* padding: 0px 30px 35px 0px; */
