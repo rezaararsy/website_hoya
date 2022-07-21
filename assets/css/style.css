@@ -158,22 +158,22 @@ h6{
 # Header
 --------------------------------------------------------------*/
 #header {
-  /* height: 40px; */
+  height: 60px;
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
   /* background: rgba(1, 4, 136, 0.9); */
   background:#0069B3;
   /* padding-bottom: 0; */
-  padding-top: 0.4%;
-  padding-bottom: 0%;
+  /* padding-top: 0.4%;
+  padding-bottom: 0%; */
 }
 #header.header-transparent {
   background: transparent;
 }
 #header.header-scrolled {
   background: #0069B3;
-  /* height: 40px; */
+  height: 60px;
 }
 #header .logo h1 {
   font-size: 28px;
@@ -201,6 +201,7 @@ h6{
 */
 .navbar {
   padding: 0;
+  padding-top: 10px;
 }
 .navbar ul {
   margin: 0;
@@ -250,6 +251,8 @@ h6{
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
   color: #0069B3;
   background-color: #FDBA4D;
+  height: 50px;
+  /* padding-bottom: 15px; */
   border-radius: 14px 14px 0px 0px;
 }
 .navbar .dropdown ul {
@@ -480,8 +483,10 @@ h6{
     height: 100vh;
   }
   #vl{
+    /* align-items: center;
     border-left: 4px solid #EACFA6;
-            height: 100%;margin-left: -8.5%;margin-right: 20%;
+            height: 80%;margin-left: -15.5%;margin-right: 20%; */
+            border-left: 1rem solid red;
   }
   #gambar3 {
     width:30%;
