@@ -6,7 +6,9 @@
             "OpticTYPE": "IO",
             "alamat": "Medan",
             "longitude": 3.5854053,
-            "latitude": 98.6848469
+            "latitude": 98.6848469,
+            "alamat1":"Jl. Bandung No.48/50, Ps. Baru, Kec. Medan Kota, Kota Medan, Sumatera Utara 20212",
+            "telepon":"061-4534838"
         },
         {
             "id": "2",
@@ -15,7 +17,9 @@
             "OpticTYPE": "IO",
             "alamat": "Jakarta",
             "longitude": -6.2707784,
-            "latitude": 106.7567614
+            "latitude": 106.7567614,
+            "alamat1":"Jl. Bintaro Utama Raya Blok E No 21, Bintaro Jaya 1, Jakarta Selatan, RT.13/RW.8, Bintaro, Kec. Pesanggrahan, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12330",
+            "telepon":"08561949591"
         },
         {
             "id": "3",
@@ -24,7 +28,9 @@
             "OpticTYPE": "IO",
             "alamat": "Jakarta",
             "longitude": -6.1593861,
-            "latitude": 106.9041702
+            "latitude": 106.9041702,
+            "alamat1":"Jl. Boulevard Bar. Raya No.24 B, RW.7, Klp. Gading Bar., Kec. Klp. Gading, Kota Jkt Utara, Daerah Khusus Ibukota Jakarta 14240",
+            "telepon":"021-4515387"
         },
         {
             "id": "4",
@@ -33,7 +39,9 @@
             "OpticTYPE": "IO",
             "alamat": "Tangsel",
             "longitude": -6.2342749,
-            "latitude": 106.5976563
+            "latitude": 106.5976563,
+            "alamat1":"Jl. Gading Serpong Boulevard Ruko 1B Blok BA3 No. 29, Pakulonan Bar., Kec. Klp. Dua, Kabupaten Tangerang, Banten 15810",
+            "telepon":"021-5472349"
         },
         {
             "id": "5",
@@ -42,7 +50,9 @@
             "OpticTYPE": "IO",
             "alamat": "Bekasi",
             "longitude": -6.1724669,
-            "latitude": 106.9749305
+            "latitude": 106.9749305,
+            "alamat1":"Jl. Harapan Indah Boulevard Ruko Asia Tropis blok AT-16 no 51 Kota Harapan Indah, RT.10/RW.8, Pejuang, Medan Satria, Bekasi City, West Java 17131",
+            "telepon":"081287840643"
         },
         {
             "id": "6",
@@ -51,7 +61,9 @@
             "OpticTYPE": "IO",
             "alamat": "Jakarta",
             "longitude": -6.2771049,
-            "latitude": 106.815671
+            "latitude": 106.815671,
+            "alamat1":"The Broadway Kemang, Benda Raya Street No.46F, RT.6/RW.4, Cilandak Tim., Kec. Ps. Minggu, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12560",
+            "telepon":"081280490448"
         },
         {
             "id": "7",
@@ -60,7 +72,9 @@
             "OpticTYPE": "IO",
             "alamat": "Jakarta",
             "longitude": -6.1357141,
-            "latitude": 106.8246423
+            "latitude": 106.8246423,
+            "alamat1":"Gedung ITC Mangga Dua, Lt. 1 Blok C No. 111-112, Jl. Mangga Dua Raya, RT.11/RW.5, Ancol, Kec. Pademangan, Kota Jkt Utara, Daerah Khusus Ibukota Jakarta 14430",
+            "telepon":"021-6016522"
         },
         {
             "id": "8",
@@ -69,7 +83,9 @@
             "OpticTYPE": "Chain",
             "alamat": "Bandung",
             "longitude": -6.9055542,
-            "latitude": 107.5966903
+            "latitude": 107.5966903,
+            "alamat1":"Paskal 23 Mall Lantai 1 Unit L1-51, Jl. Pasir Kaliki No.25-27, Kb. Jeruk, Kec. Cicendo, Kota Bandung, Jawa Barat 40161",
+            "telepon":"022-20567460"
         },
         {
             "id": "9",
@@ -78,7 +94,9 @@
             "OpticTYPE": "Chain",
             "alamat": "Tangsel",
             "longitude": -6.3046302,
-            "latitude": 106.643904
+            "latitude": 106.643904,
+            "alamat1":"Jl. BSD Raya Utama, Pagedangan, Kec. Pagedangan, Kabupaten Tangerang, Banten 15345",
+            "telepon":"021-29168533"
         },
         {
             "id": "10",
@@ -87,7 +105,9 @@
             "OpticTYPE": "Chain",
             "alamat": "Bogor",
             "longitude": -6.5530452,
-            "latitude": 106.7543603
+            "latitude": 106.7543603,
+            "alamat1":"Jl. MH. Thamrin, Citaringgul, Kec. Babakan Madang, Kabupaten Bogor, Jawa Barat 16810",
+            "telepon":"021-87965151"
         },
         {
             "id": "11",
@@ -96,7 +116,9 @@
             "OpticTYPE": "Chain",
             "alamat": "Bali",
             "longitude": -8.7234952,
-            "latitude": 115.1842964
+            "latitude": 115.1842964,
+            "alamat1":"Jl. Bypass Ngurah Rai, Kuta, Kec. Denpasar Tim., Kabupaten Badung, Bali 80361",
+            "telepon":"0361-752688"
         },
         {
             "id": "12",
@@ -105,7 +127,9 @@
             "OpticTYPE": "Chain",
             "alamat": "Samarinda",
             "longitude": -0.5250121,
-            "latitude": 117.1159398
+            "latitude": 117.1159398,
+            "alamat1":"1 FLOOR.36, Jl. Untung Suropati No.8, Karang Asam Ulu, Kec. Sungai Kunjang, Kota Samarinda, Kalimantan Timur 75126",
+            "telepon":"0541-6294773"
         },
         {
             "id": "13",
@@ -114,7 +138,9 @@
             "OpticTYPE": "Chain",
             "alamat": "Kabupaten Kubu",
             "longitude": -0.0778194,
-            "latitude": 109.3681176
+            "latitude": 109.3681176,
+            "alamat1":"Jl. Arteri Supadio, Sungai Raya, Kab, Kabupaten Kubu Raya, Kalimantan Barat 78391",
+            "telepon":"0561-7266322"
         },
         {
             "id": "14",
@@ -123,7 +149,9 @@
             "OpticTYPE": "Chain",
             "alamat": "Batam",
             "longitude": 1.1361706,
-            "latitude": 104.0064622
+            "latitude": 104.0064622,
+            "alamat1":"Jl. Pembangunan, Batu Selicin, Kec. Lubuk Baja, Kota Batam, Kepulauan Riau 29432",
+            "telepon":"0778-4888985"
         },
         {
             "id": "15",
@@ -132,7 +160,9 @@
             "OpticTYPE": "Chain",
             "alamat": "Bekasi",
             "longitude": -6.2484415,
-            "latitude": 106.9908156
+            "latitude": 106.9908156,
+            "alamat1":"Jl. KH. Noer Ali No.35, RT.008/RW.002, Pekayon Jaya, Bekasi Selatan, Bekasi City, West Java 17148",
+            "telepon":"021-8848577"
         },
         {
             "id": "16",
@@ -141,7 +171,9 @@
             "OpticTYPE": "Chain",
             "alamat": "Jakarta",
             "longitude": -6.1785831,
-            "latitude": 106.7922664
+            "latitude": 106.7922664,
+            "alamat1":"Jl. Letjen S. Parman, Kav. 21 Upper Ground Jakarta Barat, RT.12/RW.1, South Tanjung Duren, Grogol petamburan, Jakarta, 11470",
+            "telepon":"021-5639315"
         },
         {
             "id": "17",
@@ -150,7 +182,9 @@
             "OpticTYPE": "Chain",
             "alamat": "Bekasi",
             "longitude": -6.383185,
-            "latitude": 106.9260538
+            "latitude": 106.9260538,
+            "alamat1":"Jl. Alternatif Cibubur Cileungsi Km. 4 Ground Floor No. 08, RT.005/RW.011, Jatikarya, Jatisampurna, Bekasi City, West Java 17435",
+            "telepon":"021-29377342"
         },
         {
             "id": "18",
@@ -159,7 +193,9 @@
             "OpticTYPE": "Chain",
             "alamat": "Semarang",
             "longitude": -6.988813,
-            "latitude": 110.424237
+            "latitude": 110.424237,
+            "alamat1":"Jl. Simpang Lima No.17, Pekunden, Semarang, Semarang City, Central Java 50132",
+            "telepon":"024-8415485"
         },
         {
             "id": "19",
@@ -168,7 +204,9 @@
             "OpticTYPE": "Chain",
             "alamat": "Pekanbaru",
             "longitude": 0.4991918,
-            "latitude": 101.4176083
+            "latitude": 101.4176083,
+            "alamat1":"Jl. Soekarno - Hatta Jl. Tuanku Tambusai, Delima, Tampan, Pekanbaru City, Riau 28294",
+            "telepon":"0761-864028"
         },
         {
             "id": "20",
@@ -177,7 +215,9 @@
             "OpticTYPE": "Chain",
             "alamat": "Manado",
             "longitude": 1.4723601,
-            "latitude": 124.8317936
+            "latitude": 124.8317936,
+            "alamat1":"Jl. Piere Tendean (Boulevard) No.7 Lantai Dasar No. GF-79, North Sulawesi 95111",
+            "telepon":"0431-8881048"
         },
         {
             "id": "21",
@@ -186,7 +226,9 @@
             "OpticTYPE": "Chain",
             "alamat": "Jakarta",
             "longitude": -6.245661,
-            "latitude": 106.7976021
+            "latitude": 106.7976021,
+            "alamat1":"Jl. Melawai Raya No.65, RT.4/RW.6, Melawai, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12160",
+            "telepon":"021-7262206"
         },
         {
             "id": "22",
@@ -195,7 +237,9 @@
             "OpticTYPE": "Chain",
             "alamat": "Jakarta",
             "longitude": -6.1576335,
-            "latitude": 106.9079071
+            "latitude": 106.9079071,
+            "alamat1":"Jl. Boulevard Raya No.RT.13, RT.13/RW.18, Klp. Gading Tim., Kec. Klp. Gading, Kota Jkt Utara, Daerah Khusus Ibukota Jakarta 14240",
+            "telepon":"021-45853588"
         },
         {
             "id": "23",
@@ -204,7 +248,9 @@
             "OpticTYPE": "Chain",
             "alamat": "Palembang",
             "longitude": -2.9847511,
-            "latitude": 104.7538373
+            "latitude": 104.7538373,
+            "alamat1":"Jl. Letkol Iskandar No.18, 24 Ilir, Bukit Kecil, Palembang City, South Sumatra 30135",
+            "telepon":"0711-7623080"
         },
         {
             "id": "24",
@@ -213,7 +259,9 @@
             "OpticTYPE": "Chain",
             "alamat": "Semarang",
             "longitude": -6.9789786,
-            "latitude": 110.415902
+            "latitude": 110.415902,
+            "alamat1":"Jl.Pemuda No.118 Ground Floor, Sekayu, Semarang Tengah, Semarang City, Central Java 50132",
+            "telepon":"024-86579098"
         },
         {
             "id": "25",
@@ -222,7 +270,9 @@
             "OpticTYPE": "Chain",
             "alamat": "Jakarta",
             "longitude": -6.1090517,
-            "latitude": 106.7407457
+            "latitude": 106.7407457,
+            "alamat1":"Jl. Pantai Indah Kapuk, RT.6/RW.2, Kamal Muara, Kec. Penjaringan, Kota Jkt Utara, Daerah Khusus Ibukota Jakarta 14470",
+            "telepon":"021-22570908"
         },
         {
             "id": "26",
@@ -231,7 +281,9 @@
             "OpticTYPE": "Chain",
             "alamat": "Jakarta",
             "longitude": -6.2656451,
-            "latitude": 106.7842565
+            "latitude": 106.7842565,
+            "alamat1":"Jl. Metro Pondok Indah No.1, RT.1/RW.16, Pd. Pinang, Kec. Kby. Lama, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12310",
+            "telepon":"021-7506790"
         },
         {
             "id": "27",
@@ -240,7 +292,9 @@
             "OpticTYPE": "Chain",
             "alamat": "Yogyakarta",
             "longitude": -7.7825134,
-            "latitude": 110.4012865
+            "latitude": 110.4012865,
+            "alamat1":"GROUND FLOOR # B8 & 9, Jl. Laksda Adisucipto, Ambarukmo, Caturtunggal, Depok, Sleman Regency, Central Java 55281",
+            "telepon":"0274-4331138"
         },
         {
             "id": "28",
@@ -249,7 +303,9 @@
             "OpticTYPE": "Chain",
             "alamat": "Medan",
             "longitude": 3.5817047,
-            "latitude": 98.6715373
+            "latitude": 98.6715373,
+            "alamat1":"Jl. KH. Zainul Arifin No.7, Madras Hulu, Kec. Medan Polonia, Kota Medan, Sumatera Utara 20152",
+            "telepon":"061-4501336"
         },
         {
             "id": "29",
@@ -258,7 +314,9 @@
             "OpticTYPE": "Chain",
             "alamat": "Makassar",
             "longitude": -5.1597218,
-            "latitude": 119.3945372
+            "latitude": 119.3945372,
+            "alamat1":"Jl. HM. Dg. Patomo, Maccini Sombala, Tamalate, Makassar City, South Sulawesi 90134",
+            "telepon":"0411-8117072"
         },
         {
             "id": "30",
@@ -267,7 +325,9 @@
             "OpticTYPE": "Chain",
             "alamat": "Surabaya",
             "longitude": -7.2614011,
-            "latitude": 112.7387791
+            "latitude": 112.7387791,
+            "alamat1":"Jl. Basuki Rahmat No.8-12, Kedungdoro, Kec. Tegalsari, Kota SBY, Jawa Timur 60261",
+            "telepon":"031-5468217"
         },
         {
             "id": "31",
@@ -276,6 +336,8 @@
             "OpticTYPE": "Chain",
             "alamat": "Balikpapan",
             "longitude": -1.2775077,
-            "latitude": 116.838503
+            "latitude": 116.838503,
+            "alamat1":"Jl. Jend. Sudirman Balikpapan No.1, Klandasan Ilir, Balikpapan Kota, Balikpapan City, East Kalimantan 76125",
+            "telepon":"0542-413881"
         }
 ]

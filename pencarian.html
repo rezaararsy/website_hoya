@@ -410,7 +410,7 @@
                 $('#resultnya').empty();
                 $('#resultnya').append('' + data.length + ' Result');
                 for (let i = 0; i < data.length; i++) {
-                    $('#isinya').append('<div onclick="myClick(' + i + ',' + data[i].LatLng + ')" class=""style="padding: 20px; border-style: dashed;border-color: #0069B3;border-radius: 10px;margin:10px"><p><b>' + data[i].judul + ' [' + data[i].type + ']</b></p><p>' + data[i].alamat + '</p></div>');
+                    $('#isinya').append('<div onclick="myClick(' + i + ',' + data[i].LatLng + ')" class=""style="padding: 20px; border-style: dashed;border-color: #0069B3;border-radius: 10px;margin:10px"><p><b>' + data[i].judul + ' [' + data[i].type + ']</b></p><p>' + data[i].alamat1 + ' </p><p>' + data[i].telepon + '</p></div>');
                 }
             });
         }
@@ -434,7 +434,7 @@
                     $('#resultnya').empty();
                     $('#resultnya').append('' + objek2.length + ' Result');
                     for (let i = 0; i < objek2.length; i++) {
-                        $('#isinya').append('<div onclick="myClick(' + i + ',' + objek2[i].LatLng + ')" class=""style="padding: 20px; border-style: dashed;border-color: #0069B3;border-radius: 10px;margin:10px"><p><b>' + objek2[i].judul + ' [' + objek2[i].type + ']</b></p><p>' + objek2[i].alamat + '</p></div>');
+                        $('#isinya').append('<div onclick="myClick(' + i + ',' + objek2[i].LatLng + ')" class=""style="padding: 20px; border-style: dashed;border-color: #0069B3;border-radius: 10px;margin:10px"><p><b>' + objek2[i].judul + ' [' + objek2[i].type + ']</b></p><p>' + objek2[i].alamat1 + '</p><p>' + data[i].telepon + '</p></div>');
                     }
 
                     // myClick(0);
@@ -461,7 +461,7 @@
                     $('#resultnya').empty();
                     $('#resultnya').append('' + objek2.length + ' Result');
                     for (let i = 0; i < objek2.length; i++) {
-                        $('#isinya').append('<div onclick="myClick(' + i + ',' + objek2[i].LatLng + ')" class=""style="padding: 20px; border-style: dashed;border-color: #0069B3;border-radius: 10px;margin:10px"><p><b>' + objek2[i].judul + ' [' + objek2[i].type + ']</b></p><p>' + objek2[i].alamat + '</p></div>');
+                        $('#isinya').append('<div onclick="myClick(' + i + ',' + objek2[i].LatLng + ')" class=""style="padding: 20px; border-style: dashed;border-color: #0069B3;border-radius: 10px;margin:10px"><p><b>' + objek2[i].judul + ' [' + objek2[i].type + ']</b></p><p>' + objek2[i].alamat1 + '</p><p>' + data[i].telepon + '</p></div>');
                     }
 
                 });
@@ -545,7 +545,7 @@
                 });
                 (function (marker, coords) {
                     google.maps.event.addListener(marker, "click", function (e) {
-                        infoWindow.setContent("<div style = 'width:200px;min-height:40px'>" + coords.judul + "</div>");
+                        infoWindow.setContent("<div style = 'width:200px;min-height:40px'><p><b>" + coords.judul + "</b></p><p>" + coords.alamat1 + " </p><p>" + coords.telepon + "</p></div>");
                         infoWindow.open(map, marker);
                     });
                 })(marker, coords);
