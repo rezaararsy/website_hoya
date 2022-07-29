@@ -454,7 +454,7 @@
                     var inputs = $("#carinya").val();;
                     console.log("Cari " + inputs);
                     objek2 = data.filter(function (el) {
-                        return el.type == inputs || el.alamat == inputs || el.judul == inputs; // Changed this so a home would match
+                        return el.type.toLowerCase().includes(inputs.toLowerCase()) || el.alamat1.toLowerCase().includes(inputs.toLowerCase()) || el.judul.toLowerCase().includes(inputs.toLowerCase()) || el.telepon.toLowerCase().includes(inputs.toLowerCase()); // Changed this so a home would match
                     });
                     objek = objek2;
                     loadMap();
