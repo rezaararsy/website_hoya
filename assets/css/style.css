@@ -496,6 +496,7 @@ h6{
   }
   #gambar3 {
     width:30%;
+    margin-top: -70px;
   }
 }
 
@@ -1127,6 +1128,56 @@ section {
   margin-top: 15px;
   color: white;
 }
+
+
+
+
+.counts5 {
+  background: #EACFA6;
+  /* padding: 0 0 30px; */
+}
+.counts5 .count-box {
+  padding: 10px 10px 5px 10px;
+  width: 100%;
+  margin : 10px;
+  /* height: 250px; */
+  position: relative;
+  text-align: center;
+  /* background: #0069B3; */
+  border-radius: 20px;
+}
+.counts5 .count-box i {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  background: #1acc8d;
+  padding: 12px;
+  color: #fff;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  width: 48px;
+  height: 48px;
+}
+.counts5 .count-box span {
+  font-size: 36px;
+  display: block;
+  font-weight: 600;
+  color: #010483;
+}
+.counts5 .count-box p {
+  padding: 0;
+  margin: 0;
+  /* font-family: "Montserrat", sans-serif; */
+  font-size: 20px;
+  margin-top: 15px;
+  color: white;
+}
+
 
 .counts2 {
   background: white;
