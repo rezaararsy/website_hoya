@@ -653,6 +653,109 @@ h6{
 }
 
 
+#heroku {
+  width: 100%;
+  /* background: url("assets/A22.png"); */
+  /* background-image: url('../tentang1.png'); */
+  position: relative;
+  padding: 20px 0 0 0;
+}
+#heroku:before {
+  content: "";
+  /* background: rgba(2, 5, 161, 0.91); */
+  /* background: white; */
+  background: url('../B22.png') center/contain no-repeat;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-size:40%;
+
+}
+#heroku h1 {
+  margin: 0 0 20px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #0069B3;
+}
+#heroku h1 span {
+  color: #fff;
+  border-bottom: 4px solid #0069B3;
+}
+#heroku h2 {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+
+#heroku .btn-get-started {
+  /* font-family: "Montserrat", sans-serif; */
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: white;
+  background: #0069B3;
+}
+#heroku .btn-get-started:hover {
+  background: #EACFA6
+}
+#heroku .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+@media (min-width: 1024px) {
+  #heroku {
+    background-attachment: fixed;
+    /* height: 100vh; */
+  }
+}
+@media (max-width: 991px) {
+  #heroku {
+    padding-top: 80px;
+  }
+  #heroku .animated {
+    -webkit-animation: none;
+    animation: none;
+  }
+  #heroku .hero-img {
+    text-align: center;
+  }
+  #heroku .hero-img img {
+    max-width: 50%;
+  }
+  #heroku h1 {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+  #heroku h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 575px) {
+  #heroku .hero-img img {
+    width: 80%;
+  }
+  #heroku h1 {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+  }
+}
 
 
 #hero2 {
@@ -754,6 +857,113 @@ h6{
     line-height: 32px;
     margin-bottom: 10px;
     margin-left: 50px;
+  }
+}
+
+
+
+#hero3 {
+  width: 100%;
+  background: url("assets/A22.png");
+  position: relative;
+  padding: 20px 0 0 0;
+}
+#hero3:before {
+  content: "";
+  /* background: rgba(2, 5, 161, 0.91); */
+  background: #EACFA6;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#hero3 h1 {
+  margin: 0 0 20px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #0069B3;
+}
+#hero3 h1 span {
+  color: #fff;
+  border-bottom: 4px solid #0069B3;
+}
+#hero3 h2 {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+.btn-get-started2 {
+  /* font-family: "Montserrat", sans-serif; */
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #0069B3;
+  background: #EACFA6;
+}
+#hero3 .btn-get-started {
+  /* font-family: "Montserrat", sans-serif; */
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: white;
+  background: #0069B3;
+}
+#hero3 .btn-get-started:hover {
+  background: #EACFA6
+}
+#hero3 .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+@media (min-width: 1024px) {
+  #hero3 {
+    background-attachment: fixed;
+    height: 100vh;
+  }
+}
+@media (max-width: 991px) {
+  #hero3 {
+    padding-top: 80px;
+  }
+  #hero3 .animated {
+    -webkit-animation: none;
+    animation: none;
+  }
+  #hero3 .hero-img {
+    text-align: center;
+  }
+  #hero3 .hero-img img {
+    max-width: 50%;
+  }
+  #hero3 h1 {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+  #hero3 h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 575px) {
+  #hero3 .hero-img img {
+    width: 80%;
   }
 }
 
