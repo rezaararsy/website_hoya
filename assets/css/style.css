@@ -530,6 +530,18 @@ h6{
   #panah2 h3 {
     font-size: 1rem;
   }
+  #gambar_baru{
+    position: absolute;margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+    width: 15%;
+    margin-top: -8%;
+  }
+  #panahe{
+    display: none;
+  }
 }
 @media (max-width: 575px) {
   #hero .hero-img img {
@@ -538,13 +550,51 @@ h6{
   #gambar4 {
     margin-top: -40px;
   }
+  #gambar_baru{
+    position: absolute;margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+    width: 20%;
+    margin-top: -10%;
+    
+  }
 }
 
 @media (min-width: 576px) {
   #gambar4 {
     margin-top: -60px;
   }
+  
+  
+
+
 }
+
+
+@media (min-width: 991px) {
+
+  #dashed2{
+    padding-left: 15%;
+  }
+  #dashed1{
+    border-right: dashed  white;
+  }
+  #gambar_baru{
+    position: absolute;margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+    margin-top: -5%;
+  }
+  #panahe{
+    margin-top: 40%;
+  }
+
+}
+
 
 
 #hero1 {
