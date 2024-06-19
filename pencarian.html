@@ -442,6 +442,8 @@
                         return el.type == jenis; // Changed this so a home would match
                     });
                     objek = objek2;
+                    getData();
+                    initMap();
                     loadMap();
                     $('#resultnya').empty();
                     $('#resultnya').append('' + objek2.length + ' Result');
